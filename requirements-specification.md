@@ -32,8 +32,9 @@
 | ID | Requirement | Priority | Status |
 |----|----|----|----|
 | NFR1 | The system shall provide appropriate salting and hashing of stored user credentials. | High | Not Started |
-| NFR2 | The system shall provide an efficient, responsive, intuitively navigable user interface. | Medium | Not Started |
-| NFR3 | The system shall function without noticeable delay for users connected over modern networks. | Low | Not Started |
+| NFR2 | The system shall utilize randomized, unique session IDs with cookies for persistent user sessions. | High | Not Started |
+| NFR3 | The system shall provide an efficient, responsive, intuitively navigable user interface. | Medium | Not Started |
+| NFR4 | The system shall function without noticeable delay for users connected over modern networks. | Low | Not Started |
 
 ### Complete
 
