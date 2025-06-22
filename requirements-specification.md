@@ -22,7 +22,7 @@ This project is an app for mobile and tablet devices that allows groups of profe
 | FR10 | The system shall send push notifications to inform participants when their pre-selected shift has been acquired, either by the system for the participant or by another participant. | Medium | Not Started |
 | FR11 | The system shall save the results of a completed shift draft to be viewable by all participants and group admins. | High | Not Started |
 | FR12 | The system shall permit group admins to import a shift schedule for use in a shift draft from a Microsoft Excel file. | Medium | Not Started |
-| FR13 | The system shall permit group admins to export a shift schedule to Qgenda | Medium | Not Started |
+| FR13 | The system shall permit group admins to export a shift schedule to Qgenda. | Medium | Not Started |
 
 ### Complete
 
