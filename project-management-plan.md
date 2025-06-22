@@ -26,7 +26,7 @@ To organize requirements priority and control scope, a simple feature request we
 
 ## Challenges
 
-Developer's (my) skillset is the primary bottleneck on this project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server before the days of mobile apps. The landscape has changed drastically since then, and I will be using this project as an opportunity to learn React, React Native, Node.js with Express (or possibly Next.js), PostgreSQL, Expo, and modern deployment platforms (likely Vercel and Neon). This will take time.
+Developer's (my) skillset is the primary bottleneck on this project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server before the days of mobile apps. The landscape has changed drastically since then, and I will be using this project as an opportunity to learn React, React Native, Node.js with Express.js, PostgreSQL, Expo, and modern deployment platforms (likely Vercel and Neon). This will take time.
 
 With respect to project functionality, authentication, push notifications, portability, responsiveness, backend configuration, and deployment are the main areas of difficulty I will need to research. Core functions must also be tested and ensured across multiple users without overburdening user stakeholders.
 
