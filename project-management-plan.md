@@ -23,3 +23,9 @@ Development will be responsive to changing requirements. Increments will be feat
 ### Change Management
 
 To organize requirements priority and control scope, a simple feature request website will be developed. Requests will go through an approval process. Approved requests will be translated to entries in the requirements table.
+
+## Challenges
+
+Developer's (my) skillset is the primary bottleneck on the project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server. The landscape has changed drastically since then, and I will be using this project as an opportunity to learn React, React Native, Node.js with Express, PostgreSQL, and modern deployment platforms. This will take time.
+
+Authentication, push notifications, portability, responsiveness, backend configuration, and deployment are the main areas of challenge I expect to encounter. Core functionality must also be tested and ensured across multiple users.
