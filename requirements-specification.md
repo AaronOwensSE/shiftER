@@ -1,9 +1,5 @@
 # Requirements Specification
 
-## Project Overview
-
-This project is an app for mobile and tablet devices that allows groups of professionals to compete for work shifts in the style of a fantasy sports draft.
-
 ## Functional Requirements
 
 ### Pending
