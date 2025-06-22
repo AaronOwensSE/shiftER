@@ -48,4 +48,4 @@
 2. Participants take turns selecting shifts.
 3. Each participant has an established period of time to select a shift from the list of remaining shifts.
 4. If the end of the participant list is reached while shifts remain unselected, the turn order will reverse and the draft will continue.
-5. When all shifts have been selected or when all users have opted out of further shift selection or when an appointed time has been reached, the draft will end.
+5. When all shifts have been selected, or when all users have opted out of further shift selection, or when an appointed time has been reached, the draft will end.
