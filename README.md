@@ -7,5 +7,5 @@ An app for mobile and tablet devices that allows groups of professionals to comp
 ## Documentation
 
 - [Project Management Plan](./project-management-plan.md)
-- [Tools and Technologies](./tools-and-technologies.md)
 - [Requirements Specification](./requirements-specification.md)
+- [Tools and Technologies](./tools-and-technologies.md)
