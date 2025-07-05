@@ -26,4 +26,4 @@ Code is the DNA of any project. Architecture diagrams should guide and encourage
 
 ---
 
-[../README.md](Back to README)
+[Back to README](../README.md)
