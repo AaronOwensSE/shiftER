@@ -7,7 +7,7 @@
 
 ## Frontend
 
-- HTML
+- JSX
 - CSS
 - JavaScript
 - React
@@ -16,7 +16,6 @@
 ## Backend
 
 - Node.js
-- Express.js
 
 ## Database
 
@@ -28,5 +27,4 @@
 
 ## Deployment
 
-- Vercel
-- Neon
+- Railway
