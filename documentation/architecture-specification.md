@@ -6,7 +6,7 @@ This project will utilize a classic *layered architectural model* with frontend,
 
 ## Diagrams
 
-*Code* is the DNA of any project. Architecture diagrams should guide and encourage coding and enable communication with stakeholders. Diagrams should not become a sinkhole for misallocated work, nor should they be relied upon as infallible descriptions of the system. Just as dedicated efforts to produce quality code inevitably result in bugs, dedicated efforts to perfectly align diagram documentation with the final function of a project is inevitably error-prone. With that precaution in mind, these are the diagrams I find to be of high value in visualizing this project from the outset.
+*Code* is the DNA of any project. Architecture diagrams should guide and encourage coding and enable communication with stakeholders. Diagrams should not become a sinkhole for misallocated work, nor should they be relied upon as infallible descriptions of the system. With that precaution in mind, these are the diagrams I find to be of high value in visualizing this project from the outset.
 
 ### System
 
