@@ -31,3 +31,7 @@ Developer's (my) skillset is the primary bottleneck on this project. I last buil
 With respect to project functionality, the main areas of difficulty I will need to research include authentication, push notifications, portability, responsiveness, backend configuration, and deployment. Core functions must also be tested and ensured across multiple users without overburdening user stakeholders.
 
 All of these challenges can be addressed with research, practice, and careful testing. Time is the main ingredient.
+
+---
+
+[../README.md](Back to README)

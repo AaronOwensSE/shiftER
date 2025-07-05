@@ -23,3 +23,7 @@ Code is the DNA of any project. Architecture diagrams should guide and encourage
 #### Schema
 
 ![The database schema](./database-schema.png)
+
+---
+
+[../README.md](Back to README)
