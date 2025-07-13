@@ -10,5 +10,4 @@ An app for mobile and tablet devices that allows groups of professionals to comp
 - [Requirements Specification](./documentation/requirements-specification.md)
 - [Tools and Technologies](./documentation/tools-and-technologies.md)
 - [Architecture Specification](./documentation/architecture-specification.md)
-
 - [Lessons Learned](./documentation/lessons-learned.md)
