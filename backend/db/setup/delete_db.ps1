@@ -1,5 +1,5 @@
 # Dot source sensitive information from a separate environment variable file.
-. .\project_db_env_vars.ps1
+. .\env.ps1
 
 # SQL Commands
 $SQL_DELETE_DB = "DROP DATABASE $PROJECT_DB;"

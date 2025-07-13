@@ -1,5 +1,5 @@
 # Dot source sensitive information from a separate environment variable file.
-. .\project_db_env_vars.ps1
+. .\env.ps1
 
 # SQL Commands
 $SQL_CREATE_USER = "CREATE USER $PROJECT_DB_USER WITH PASSWORD '$PROJECT_DB_PASSWORD';"
