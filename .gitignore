@@ -1,0 +1,8 @@
+.env
+backend/db/setup/env.ps1
+
+node_modules/
+
+documentation/component-diagram.drawio
+documentation/database-schema.drawio
+documentation/er-diagram.drawio

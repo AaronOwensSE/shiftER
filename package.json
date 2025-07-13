@@ -1,0 +1,24 @@
+{
+  "name": "shifter",
+  "version": "1.0.0",
+  "description": "An app for mobile and tablet devices that allows groups of professionals to compete for work shifts in the style of a fantasy sports draft.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronOwensSE/shifter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AaronOwensSE/shifter/issues"
+  },
+  "homepage": "https://github.com/AaronOwensSE/shifter#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "pg": "^8.16.3"
+  }
+}
