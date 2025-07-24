@@ -6,7 +6,7 @@ This project will utilize a classic *layered architectural model* with frontend,
 
 ### Backend
 
-The project's backend will be divided primarily into *routes, controllers, and models.* Routes will handle and HTTP requests. Controllers will perform general business logic. Models will abstract database interactions. A loose correspondence will exist between the different types of routes, controllers, and models and the entities represented in the ER diagram.
+The project's backend will be divided primarily into *routes, controllers, and models.* Routes will direct HTTP requests. Controllers will conduct general business logic. Models will perform database interactions. The different types of routes, controllers, and models loosely correspond to the different entities modeled in the ER diagram.
 
 ## Diagrams
 
@@ -16,7 +16,7 @@ The project's backend will be divided primarily into *routes, controllers, and m
 
 #### Component Diagram
 
-(Update needed to better reflect routes, controllers, and models.)
+(Update needed to better reflect backend architecture.)
 
 ![A component diagram of the system](./component-diagram.png)
 
