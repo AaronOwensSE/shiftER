@@ -2,9 +2,11 @@
 
 ## Environment Variables
 
-(Not exactly a new concept, but I'm discovering the specifics of implementation for the first time.)
+Although this concept is not new to me, the specifics of implementation for app development are.
 
-Environment variables are how we securely handle things like database credentials. Common practice is to use a root-level .env file containing variables for things like database host, port, username, password, etc. A package such as dotenv can then be used to make those variables available to code. This way, our code never contains hardcoded credentials, only variable names, allowing the code to be shared, contributed to, and deployed more freely. Important values and secrets can also be changed in one place without the need to rewrite code. We add .env to our .gitignore file, ensuring that our secrets never get uploaded. We also create a .env.example file that we do upload to demonstrate which variables should be populated at deployment. When we deploy, we may be given a platform-specific interface for certain environment variables, overriding our solution, which we should utilize.
+Environment variables are how we securely handle things like database credentials. Common practice is to use a root-level .env file containing variables for things like database host, port, username, password, etc. A package such as dotenv can then be used to make those variables available to code. This way, our code never contains hardcoded credentials, only variable names, allowing the code to be shared, contributed to, and deployed more freely. This also has the effect of storing important values and secrets in one place so that they can be modified without having to rewrite code.
+
+We add .env to our .gitignore file, ensuring that our secrets never get uploaded. We also create a .env.example file that we do upload to demonstrate which variables should be populated at deployment. When we deploy, we may be given a platform-specific interface for certain environment variables, overriding our solution, which we should utilize.
 
 ## ES6 vs. CommonJS
 
@@ -29,6 +31,14 @@ Node.js can function as a simple runtime for .js files, but when we're working o
 Run "npm init" from the project root to set up a Node.js project. This handles project metadata and tracks dependencies, creating the package.json and package-lock.json files.
 
 Running "npm install ____" (again, from the project root) is how we add packages like pg and dotenv. This will create the node_modules directory, where the packages live.
+
+## Backend Architecture: Routes, Controllers, and Models
+
+The backend can be divided into three layers:
+
+1. **Routes** intercept HTTP requests and forward them to their appropriate controllers. The Express package makes routing easier.
+2. **Controllers** perform the main business functions and represent most of the high-level program logic. They may call upon validation functions, business subroutines, or a variety of libraries. They often call upon models to persist or retrieve data.
+3. **Models** perform direct interactions with the database, decoupling controllers from the database and SQL queries. Each model provides basic CRUD functionality for a certain part of the database, often one table or entity. They are often written to be dumb, avoiding validation and leaving as much logic to the controllers as possible.
 
 ---
 

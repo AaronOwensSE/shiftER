@@ -1,8 +1,12 @@
 # Architecture Specification
 
-## Model
+## Models
 
 This project will utilize a classic *layered architectural model* with frontend, backend, and database layers. The frontend will be built in React Native, while the backend will be built in JavaScript and will utilize the Node.js runtime. The database will be PostgreSQL.
+
+### Backend
+
+The project's backend will be divided primarily into *routes, controllers, and models.* Routes will handle and HTTP requests. Controllers will perform general business logic. Models will abstract database interactions. A loose correspondence will exist between the different types of routes, controllers, and models and the entities represented in the ER diagram.
 
 ## Diagrams
 
@@ -11,6 +15,8 @@ This project will utilize a classic *layered architectural model* with frontend,
 ### System
 
 #### Component Diagram
+
+(Update needed to better reflect routes, controllers, and models.)
 
 ![A component diagram of the system](./component-diagram.png)
 

@@ -22,11 +22,13 @@ Development will be focused on short-term increments and responsive to changing 
 
 ### Change Management
 
-To organize requirements priority and control scope, a simple feature request website will be developed. Requests will go through an approval process. Approved requests will be translated to entries in the requirements table.
+Changes will be discussed between the product owner and the developer. Agreed upon changes will be translated to entries in the requirements table and considered for future development cycles.
+
+A more formal change management system may be considered after basic functionality is achieved, allowing user stakeholders to begin engaging with the app. Until then, development time is best spent on the app itself.
 
 ## Challenges
 
-Developer's (my) skillset is the primary bottleneck on this project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server before the days of mobile apps. The landscape has changed since then, and I will be using this project as an opportunity to learn React, React Native, Node.js, PostgreSQL, Expo, and modern deployment platforms. This will take time.
+Developer's (my) skillset is the primary bottleneck on this project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server before the days of mobile apps. The landscape has changed since then, and I will be using this project as an opportunity to learn JSX, React, React Native, Node.js, Express, PostgreSQL, Expo, and modern deployment platforms. This will take time.
 
 With respect to project functionality, the main areas of difficulty I will need to research include authentication, push notifications, portability, responsiveness, backend configuration, and deployment. Core functions must also be tested and ensured across multiple users without overburdening user stakeholders.
 
