@@ -1,8 +1,8 @@
-# shifter
+# shiftER
 
 ## Project Overview
 
-An app for mobile and tablet devices that allows groups of professionals to compete for work shifts in the style of a fantasy sports draft.
+An app for mobile and tablet devices that enables groups of professionals to compete for work shifts in the style of a fantasy sports draft.
 
 ## Documentation
 

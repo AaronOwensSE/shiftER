@@ -8,14 +8,15 @@
 ## Frontend
 
 - JSX
-- CSS
 - JavaScript
 - React
 - React Native
 
 ## Backend
 
+- JavaScript
 - Node.js
+- Express
 
 ## Database
 

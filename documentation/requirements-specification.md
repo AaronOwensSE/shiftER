@@ -6,7 +6,7 @@
 
 | ID | Requirement | Priority | Status |
 |----|----|----|----|
-| FR1 | The system shall require each user to create and log into a password-protected account associated with an email address before proceeding to further app functions. | High | Not Started |
+| FR1 | The system shall require each user to create and log into a password-protected account associated with a user ID or email address before proceeding to further app functions. | High | Not Started |
 | FR2 | The system shall perform appropriate salting and hashing of stored user credentials. | High | Not Started |
 | FR3 | The system shall utilize randomized, unique session IDs with cookies for persistent user sessions. | High | Not Started |
 | FR4 | The system shall permit users to recover forgotten passwords by email. | Medium | Not Started |
