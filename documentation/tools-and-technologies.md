@@ -7,8 +7,8 @@
 
 ## Frontend
 
-- JSX
 - JavaScript
+- JSX
 - React
 - React Native
 
@@ -25,6 +25,7 @@
 ## Testing
 
 - Expo
+- Jest
 
 ## Deployment
 
