@@ -34,11 +34,11 @@ Running "npm install ____" (again, from the project root) is how we add packages
 
 ## Backend Architecture: Routes, Controllers, and Models
 
-The backend can be divided into three layers:
+This project's backend can be divided into three layers that comprise a common architectural pattern:
 
-1. **Routes** intercept HTTP requests and forward them to their appropriate controllers. The Express package makes routing easier.
-2. **Controllers** perform the main business functions and represent most of the high-level program logic. They may call upon validation functions, business subroutines, or a variety of libraries. They often call upon models to persist or retrieve data.
-3. **Models** perform direct interactions with the database, decoupling controllers from the database and SQL queries. Each model provides basic CRUD functionality for a certain part of the database, often one table or entity. They are often written to be dumb, avoiding validation and leaving as much logic to the controllers as possible.
+1. *Routes* intercept HTTP requests and forward them to their appropriate controllers.
+2. *Controllers* perform the main business functions and represent most of the high-level program logic. They may call upon validation functions, business subroutines, or a variety of libraries. They often call upon models to persist or retrieve data.
+3. *Models* perform direct interactions with the database. Each model provides basic CRUD functionality for a certain part of the database, often one table or entity. They are often written to be dumb, avoiding validation and leaving as much logic to the controllers as possible. Models decouple controllers from the database.
 
 ---
 

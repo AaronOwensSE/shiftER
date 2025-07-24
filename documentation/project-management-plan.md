@@ -24,7 +24,7 @@ Development will be focused on short-term increments and responsive to changing 
 
 Changes will be discussed between the product owner and the developer. Agreed upon changes will be translated to entries in the requirements table and considered for future development cycles.
 
-A more formal change management system may be considered after basic functionality is achieved, allowing user stakeholders to begin engaging with the app. Until then, development time is best spent on the app itself.
+A more formal change management system may be considered after basic functionality is achieved and user stakeholders begin engaging with the app. Until then, development time is best spent on the app itself.
 
 ## Challenges
 
