@@ -1,6 +1,10 @@
+"use strict";
+
 import { registerRootComponent } from 'expo';
 
 import App from './App';
+
+// dotenv package doesn't work in React Native.
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
