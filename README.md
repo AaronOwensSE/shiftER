@@ -14,4 +14,4 @@ An app for mobile and tablet devices that enables groups of professionals to com
 
 ## License
 
-All rights reserved. This repo is made public only to facilitate communication between shareholders.
+All rights reserved. This repo is made public only to facilitate communication between stakeholders.
