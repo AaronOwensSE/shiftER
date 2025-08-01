@@ -6,9 +6,8 @@
 
 | ID | Requirement | Priority | Status |
 |----|----|----|----|
-| FR1 | The system shall require each user to create and log into a password-protected account associated with a user ID or email address before proceeding to further app functions. | High | Not Started |
-| FR2 | The system shall perform appropriate salting and hashing of stored user credentials. | High | Not Started |
-| FR3 | The system shall utilize randomized, unique session IDs with cookies for persistent user sessions. | High | Not Started |
+| FR1 | The system shall require each user to create and log into a password-protected account associated with a user ID or email address before proceeding to further app functions. | High | In Progress |
+| FR3 | The system shall utilize randomized, unique session IDs with cookies for persistent user sessions. | High | In Progress |
 | FR4 | The system shall permit users to recover forgotten passwords by email. | Medium | Not Started |
 | FR5 | The system shall permit users to form into user groups controlled by group admins. | High | Not Started |
 | FR6 | The system shall permit group admins to run shift drafts for their groups. (The shift draft ruleset is detailed elsewhere in this document.) | High | Not Started |
@@ -26,6 +25,7 @@
 
 | ID | Requirement | Priority | Status |
 |----|----|----|----|
+| FR2 | The system shall perform appropriate salting and hashing of stored user credentials. | High | Complete |
 
 ## Non-Functional Requirements
 
@@ -33,7 +33,7 @@
 
 | ID | Requirement | Priority | Status |
 |----|----|----|----|
-| NFR1 | The system shall provide secure user and session authentication. | High | Not Started |
+| NFR1 | The system shall provide secure user and session authentication. | High | In Progress |
 | NFR2 | The system shall provide an efficient, responsive, intuitively navigable user interface. | Medium | Not Started |
 | NFR3 | The system shall function without noticeable delay for users connected over modern networks. | Low | Not Started |
 
