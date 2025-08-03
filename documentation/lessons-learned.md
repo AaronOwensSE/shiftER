@@ -40,6 +40,38 @@ This project's backend can be divided into three layers that comprise a common a
 2. *Controllers* perform the main business functions and represent most of the high-level program logic. They may call upon validation functions, business subroutines, or a variety of libraries. They often call upon models to persist or retrieve data.
 3. *Models* perform direct interactions with the database. Each model provides basic CRUD functionality for a certain part of the database, often one table or entity. They are often written to be dumb, avoiding validation and leaving as much logic to the controllers as possible. Models decouple controllers from the database.
 
+## Falsy Values vs. Exceptions vs. Results
+
+In the past, I've used projects as opportunities to explore different styles of error handling, and I still feel like I'm searching for the correct approach.
+
+Some languages, like C, do not have exception handling and rely upon either boolean values or error codes. Boolean values can be very convenient for the programmer calling the function when he or she only needs to know if it succeeded or failed. However, the lack of detail can lead to ambiguity.
+
+This JavaScript function to determine whether a user exists in the database is a classic example:
+
+```JavaScript
+async function userExists(userId) {
+    try {
+        const result = await pool.query("SELECT * FROM users WHERE id = $1", [userId]);
+
+        return result.rowCount > 0;
+    } catch (error) {
+        console.error(error.message);
+
+        return false;
+    }
+}
+```
+
+The function returns false when the specified user does not exist in the database, but it also returns false when the query fails. A programmer relying upon a false result as a certainty that the specified user does not exist can be misled, resulting in bugs.
+
+On the other hand, every time we write a function that throws an exception, we are asking the calling code to handle that exception. Too much of this bogs code down with an excess of try/catch control structures, harming readability and forcing functions which might be relatively simple to engage in relatively complex error handling. Clear documentation of exception throwing behavior also becomes highly important.
+
+It's ineffective to mix the two approaches within a single function because any possibility of an exception being thrown effectively decides the issue and forces the caller to react. Therefore, the best approach can only be to minimize the number of functions which throw exceptions, i.e., exceptions are for exceptional circumstances only.
+
+The Result pattern offers a happy medium that I would like to explore further while working on this project. Very simply, a Result is a compound data type which contains both a boolean to indicate success or failure and either a return value or an error object or message.
+
+Although this does force the calling code to unpack the Result, this is arguably less cumbersome than being required to change the control flow of the code, which strongly impacts readability.
+
 ---
 
 [Back to README](../README.md)
