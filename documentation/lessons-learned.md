@@ -70,7 +70,7 @@ It's ineffective to mix the two approaches within a single function because any 
 
 The Result pattern offers a happy medium that I would like to explore further while working on this project. Very simply, a Result is a compound data type which contains both a boolean to indicate success or failure and either a return value or an error object or message.
 
-Although this does force the calling code to unpack the Result, this is arguably less cumbersome than being required to change the control flow of the code, which strongly impacts readability.
+Although this does force the calling code to unpack the Result, this is arguably less cumbersome than being required to change the control flow of the code and handle scope issues surrounding the introduction of try/catch blocks.
 
 ---
 
