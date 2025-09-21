@@ -72,6 +72,12 @@ The Result pattern offers a happy medium that I would like to explore further wh
 
 Although this does force the calling code to unpack the Result, this is arguably less cumbersome than being required to change the control flow of the code and handle scope issues surrounding the introduction of try/catch blocks.
 
+## "Walking Skeleton" vs. Focused Development
+
+I expected this project to be an ideal opportunity to practice Alistair Cockburn's famous proposal that a system should be built out from an initial "walking skeleton," that is, a minimally featured, end-to-end functional system. This establishes early integration of all subsystems and allows a more robust feature set to be fleshed out as part of an existing environment instead of in isolation. I generally agree with the consensus that this is a smart way to build software.
+
+In this particular case, however, working alone and learning a large number of new languages and technologies, I've found that jumping too quickly from one module, language, or system to another can be detrimental to the learning experience. While I still hope to proceed in the style recommended by Cockburn, I've found that slowing down and delving a bit deeper into each section of the system before moving on to the next has its benefits. I plan to experiment with this approach in the coming weeks.
+
 ---
 
 [Back to README](../README.md)
