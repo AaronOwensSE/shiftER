@@ -78,6 +78,75 @@ I expected this project to be an ideal opportunity to practice Alistair Cockburn
 
 In this particular case, however, working alone and learning a large number of new languages and technologies, I've found that jumping too quickly from one module, language, or system to another can be detrimental to the learning experience. While I still hope to proceed in the style recommended by Cockburn, I've found that slowing down and delving a bit deeper into each section of the system before moving on to the next has its benefits. I plan to experiment with this approach in the coming weeks.
 
+## Testing Setup with Jest and cross-env
+
+Jest is a JavaScript testing framework that allows test cases to be written easily and run automatically. I am hoping to use it to target code and requirements coverage and to put some of my academic knowledge of software testing into practice. Getting Jest working properly requires some additional project configuration.
+
+In the project root directory, install Jest as a development (not production) dependency:
+
+```shell
+npm install --save-dev jest
+```
+
+In package.json (the project configuration file), CommonJS projects can set the test script to run Jest by simply using:
+
+```JSON
+"scripts": {
+    "test": "jest"
+}
+```
+
+However, we have committed to using ES Modules on this project. We must configure Jest and the project to deal with this.
+
+First, create a file in the project root directory called jest.config.js, and save the following code:
+
+```JavaScript
+export default {
+    testEnvironment: "node",    // Use a Node.js environment for testing, as opposed to simulating a browser environment.
+    transform: {},              // Prevent Jest from using Babel to transform code, allowing it to run ES Modules.
+};
+```
+
+And in package.json:
+
+```JSON
+"scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+}
+```
+
+Now, whenever we run the following from the project root directory:
+
+```shell
+npm test
+```
+
+Jest will search for test files (*.test.js), run the test cases within them, and give a report.
+
+That's nice, but there's a problem. Test files need to import code files in order to access the functions to be tested. This means anything in the code file that is not being exported is not accessible to Jest. We could write test cases directly into the code files, of course, but this would be an undesirable mixing of test code and production code.
+
+My preferred solution to this problem is to build an export package conditionally based on the NODE_ENV environment variable. (Any variable name could be used, but NODE_ENV is a standard recognized by many tools that we should adhere to.) This still requires modifying the codebase, but the modifications are minimal and acceptable.
+
+In order to set NODE_ENV when we run our test script, we need to modify package.json again. However, different operating systems use different syntaxes to set a variable. To improve the project's portability, we can use the cross-env package to enable setting of environment variables with the same syntax, regardless of operating system.
+
+In the project root directory:
+
+```shell
+npm install --save-dev cross-env
+```
+
+Now, we can have our test script set NODE_ENV=test (on any operating system) whenever it runs, allowing exports conditional upon NODE_ENV's value to activate in our test environment while remaining inactive in production.
+
+In package.json:
+
+```JSON
+"scripts": {
+    "test": "cross-env NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js"
+}
+```
+
+With that, we are finally ready to write and run some test sets.
+
 ---
 
 [Back to README](../README.md)
