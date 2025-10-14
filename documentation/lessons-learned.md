@@ -147,6 +147,18 @@ In package.json:
 
 With that, we are finally ready to write and run some test sets.
 
+## Environment Variables Revisited
+
+As I build more background utilities, including test sets and database setup/teardown scripts, I realize not every script I run has the same access to environment variables as my app's main process. Separate access needs to be established.
+
+The first thing I did to fix this was to decouple the loading of environment variables from index.js and place this code in its own env-config.js file, to be imported by any script which will initiate a new process.
+
+However, a new problem arose: The default behavior of the dotenv config function is not to look for a .env file in the current file's directory, but in the *working directory* from which the *current process* was called. Therefore, regardless of project file structure, calls to scripts from arbitrary working directories can result in failure to load environment variables.
+
+Since my test files and database utilities do not (and should not under my desired file structure) share a directory with my .env file, they are highly likely to be called from incorrect working directories.
+
+The solution to this is simple: Provide dotenv's config function with an explicit absolute file path.
+
 ---
 
 [Back to README](../README.md)
