@@ -22,11 +22,11 @@
 
 ## Non-Functional Requirements
 
-| ID | Requirement | Priority | Status |
-|----|----|----|----|
-| NFR1 | The system shall provide secure user and session authentication. | High | In Progress |
-| NFR2 | The system shall provide an efficient, responsive, intuitively navigable user interface. | Medium | Not Started |
-| NFR3 | The system shall function without noticeable delay for users connected over modern networks. | Low | Not Started |
+| ID | Requirement | Priority |
+|----|----|----|
+| NFR1 | The system shall provide secure user and session authentication. | High |
+| NFR2 | The system shall provide an efficient, responsive, intuitively navigable user interface. | Medium |
+| NFR3 | The system shall function without noticeable delay for users connected over modern networks. | Low |
 
 ## Shift Draft Ruleset
 
