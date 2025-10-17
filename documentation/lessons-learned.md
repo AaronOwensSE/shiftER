@@ -159,6 +159,34 @@ Since my test files and database utilities do not (and should not under my desir
 
 The solution to this is simple: Provide dotenv's config function with an explicit absolute file path.
 
+## Jest Revisited
+
+For consistency with package.json, I have changed jest.config.js to a JSON file as well. I have also removed the explicit transform option. Disabling the default transformer is not necessary.
+
+Previously, I encountered the problem of needing to load environment variables separately for test sets. I also encountered a problem with my pg Pool remaining open at the end of my test script, even in cases when I thought it had been closed. These issues clarified the need for a better understanding of how exactly Jest works, how to get my test scripts the information they need, and how to properly close them out when they are done.
+
+Jest runs test files in parallel. Each file gets its own test process and test environment. A file contains a test set with potentially many test cases. Each of these layers can run their own setup and teardown scripts.
+
+Using the *globals* and *globalSetup* options, we can define variables or modules that will be available in all test environments. Environment variables can be configured here (or can wait for *setupFiles*). The option *globalTeardown* will run code after all testing is complete. Importantly, a pg Pool cannot be shared using these options. Jest serializes global setup variables and copies them to each test process, but a live pg Pool cannot be passed between processes in this manner. Each process needs its own Pool.
+
+At the process level, *setupFiles* allows us to run setup code for an individual environment, while *setupFilesAfterEnv* similarly runs setup code once for each file but with access to Jest functions, such as *beforeAll*.
+
+At the file level, *beforeAll* and *afterAll* run code on either side of the test set, while *beforeEach* and *afterEach* run code before and after each test case.
+
+For now, I will perform my environment variable setup using *globalSetup* in the Jest configuration file and my pg Pool teardown using *afterAll* at the file level.
+
+## Test Case Independence
+
+While testing my database models, I encountered the problem of wanting to call one function under test from another function under test. For example, to test createUser, it would be convenient to first call deleteUser to ensure the database is prepared for the test. However, this would break test case independence. The test case meant for createUser would become reliant upon the successful function of deleteUser, which would not yet be known.
+
+To address this problem, I chose to write direct interactions with the database in place of calling functions currently under test. For my current purposes, this is easy to do and sufficient to solve the problem, but it does highlight some possible future challenges.
+
+Are there cases in which it is worth incurring test case dependencies to avoid excessive duplication of code? Or should independence be strictly maintained in all cases?
+
+Furthermore, who tests the test cases? How much logic can be written for testing purposes before the test logic itself is in need of testing?
+
+In the short term, it seems my goal should be to keep test cases as simple as possible while respecting test case independence.
+
 ---
 
 [Back to README](../README.md)
