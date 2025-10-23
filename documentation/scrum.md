@@ -87,12 +87,12 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  | Participation Model Testing | Obstacle: Jest Setup and Teardown Configuration |
 |  | Schedule Model Testing | Session Model Completion |
 |  | Shift Model Testing | Session Model Testing |
-|  |  | Group Model Completion |
-|  |  | Group Model Testing |
-|  | Database Seed Scripts | Membership Model Completion |
-|  | Database Seed Script Testing | Draft Model |
-|  | Obstacle: Physical Whiteboard Setup | Participation Model |
-|  | Obstacle: Laptop Setup | Schedule Model |
+|  | Database Seed Scripts | Group Model Completion |
+|  | Database Seed Script Testing | Group Model Testing |
+|  | Obstacle: Physical Whiteboard Setup | Membership Model Completion |
+|  | Obstacle: Laptop Setup | Draft Model |
+|  |  | Participation Model |
+|  |  | Schedule Model |
 |  |  | Shift Model |
 |  |  | Database Schema Scripts |
 |  |  | Database Schema Script Testing |
