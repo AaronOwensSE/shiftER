@@ -75,22 +75,27 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Shift Model Testing | 1 |
 | Schedule Model | 3 |
 | Schedule Model Testing | 1 |
+| Database Schema Scripts | 3 |
+| Database Schema Script Testing | 1 |
 | Database Seed Scripts | 3 |
 | Database Seed Script Testing | 1 |
-| Database Deletion Scripts | 3 |
-| Database Deletion Script Testing | 1 |
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Participation Model | Membership Model Testing | User Model Completion |
-| Participation Model Testing | Draft Model Testing | User Model Testing |
-| Shift Model | Database Seed Scripts | Obstacle: Jest Setup and Teardown Configuration |
-| Shift Model Testing | Database Seed Script Testing | Session Model Completion |
-| Schedule Model | Database Deletion Scripts | Session Model Testing |
-| Schedule Model Testing | Database Deletion Script Testing | Group Model Completion |
-|  | Obstacle: Physical Whiteboard Setup | Group Model Testing |
-|  | Obstacle: Laptop Setup | Membership Model Completion |
-|  |  | Draft Model |
+|  | Membership Model Testing | User Model Completion |
+|  | Draft Model Testing | User Model Testing |
+|  | Participation Model Testing | Obstacle: Jest Setup and Teardown Configuration |
+|  | Schedule Model Testing | Session Model Completion |
+|  | Shift Model Testing | Session Model Testing |
+|  |  | Group Model Completion |
+|  |  | Group Model Testing |
+|  | Database Seed Scripts | Membership Model Completion |
+|  | Database Seed Script Testing | Draft Model |
+|  | Obstacle: Physical Whiteboard Setup | Participation Model |
+|  | Obstacle: Laptop Setup | Schedule Model |
+|  |  | Shift Model |
+|  |  | Database Schema Scripts |
+|  |  | Database Schema Script Testing |
 
 #### Velocity: 
 
