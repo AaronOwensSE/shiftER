@@ -82,13 +82,13 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done |
 |----|----|----|
-|  | Participation Model Testing | User Model Completion |
-|  | Schedule Model Testing | User Model Testing |
-|  | Shift Model Testing | Obstacle: Jest Setup and Teardown Configuration |
-|  | Database Seed Scripts | Session Model Completion |
-|  | Database Seed Script Testing | Session Model Testing |
-|  | Obstacle: Physical Whiteboard Setup | Group Model Completion |
-|  | Obstacle: Laptop Setup | Group Model Testing |
+|  | Schedule Model Testing | User Model Completion |
+|  | Shift Model Testing | User Model Testing |
+|  | Database Seed Scripts | Obstacle: Jest Setup and Teardown Configuration |
+|  | Database Seed Script Testing | Session Model Completion |
+|  | Obstacle: Physical Whiteboard Setup | Session Model Testing |
+|  | Obstacle: Laptop Setup | Group Model Completion |
+|  |  | Group Model Testing |
 |  |  | Membership Model Completion |
 |  |  | Draft Model |
 |  |  | Participation Model |
@@ -98,6 +98,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  |  | Database Schema Script Testing |
 |  |  | Membership Model Testing |
 |  |  | Draft Model Testing |
+|  |  | Participation Model Testing |
 
 #### Velocity: 
 
