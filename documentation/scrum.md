@@ -46,7 +46,7 @@ The product backlog is informed by the requirements specification document, but 
 
 ## Sprints
 
-Sprints for this project will be 2 weeks in duration. A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. A new GitHub branch will be used for each sprint.
+Sprints for this project will be 2 weeks in duration. A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. A new Git branch will be used for each sprint.
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
 
@@ -79,15 +79,15 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Database Schema Script Testing | 1 |
 | Database Seed Scripts | 3 |
 | Database Seed Script Testing | 1 |
+| Update Architecture Diagrams | 3 |
 
 | Not Started | In Progress | Done |
 |----|----|----|
-|  | Shift Model Testing | User Model Completion |
-|  | Database Seed Scripts | User Model Testing |
-|  | Database Seed Script Testing | Obstacle: Jest Setup and Teardown Configuration |
-|  | Obstacle: Physical Whiteboard Setup | Session Model Completion |
-|  | Obstacle: Laptop Setup | Session Model Testing |
-|  |  | Group Model Completion |
+|  | Database Seed Scripts | User Model Completion |
+|  | Database Seed Script Testing | User Model Testing |
+|  | Update Architecture Diagrams | Obstacle: Jest Setup and Teardown Configuration |
+|  | Obstacle: Physical Whiteboard Setup | Session Model Testing | Session Model Completion |
+|  | Obstacle: Laptop Setup | Group Model Completion |
 |  |  | Group Model Testing |
 |  |  | Membership Model Completion |
 |  |  | Draft Model |
@@ -100,6 +100,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  |  | Draft Model Testing |
 |  |  | Participation Model Testing |
 |  |  | Schedule Model Testing |
+|  |  | Shift Model Testing |
 
 #### Velocity: 
 
