@@ -187,6 +187,22 @@ Furthermore, who tests the test cases? How much logic can be written for testing
 
 In the short term, it seems my goal should be to keep test cases as simple as possible while respecting test case independence.
 
+## Scrum
+
+To bring greater focus and velocity to the project, I have switched to the Scrum project management framework. I bought the Scrum book and have nearly finished reading it. As of the end of my first 2-week sprint, I feel I've completed more work in 2 weeks than I have in the last 2 months and that my work is focused on specific product increments with clear understandings of what does and doesn't need to be done. My second sprint will be into more uncharted territory, but I hope to build upon my first sprint's velocity.
+
+A professor I had for my Software Engineering and Software Testing classes cautioned his students against misunderstanding Scrum and Agile. He echoed Jeff Sutherland's sentiment in the Scrum book that many organizations claiming to utilize Scrum aren't doing it right and, predictably, aren't seeing the benefits. Having worked on student teams before who would go through some of the motions of Scrum or use some of the artifacts to minimal effect, I understand this concern. I am trying to avoid this mistake while remaining attached to the reality that this is a solo project, and Scrum is a team framework.
+
+I think in the realm of solo projects, Scrum's greatest benefits lie the estimation of work relative to other work, the creation of simple, effective artifacts to prioritize and focus work, the pinpointing and elimination of obstacles to work, the regular delivery of discrete, complete units of work, the ability to regularly redefine what needs to be worked on, and the self-reflection and tracking of velocity to improve, not just maintain, skill and speed. These assets are achieved with a relatively simple system, which is a huge plus for me. I like simple things that just work.
+
+## Testing Revisited
+
+My Software Testing professor hammered on the point that too few companies allocate sufficient time for software testing, resulting in too many products that are released in a broken state. One of the contributing factors to this problem, he argued, is treating testing as if it's a final check on the successful function of the software, a check that the software will pass without issue. Scheduling time for testing without scheduling time for bug fixing and refactoring is useless. Better to avoid testing altogether if there's no time to do anything about the flaws it reveals.
+
+Despite knowing this issue, I made the very same mistake on my first sprint of this project. I allocated 3 units of work to each database model I was writing and only 1 unit of work to testing. But I probably spent 3 to 5 units of work testing, bug fixing, and refactoring each model! And this was simple statement coverage testing, no condition coverage, no boundary value analysis, none of that.
+
+Perhaps developers just want to believe we'll get it right the first time. I underestimated the simple fact that testing is hard. Furthermore, I underestimated just how much test code needs to be written and kept organized. In the future, I will be very careful about estimating test work. On the plus side, I feel much more comfortable with Jest. I'm also determined to leave JavaScript behind for TypeScript as often as possible on future projects.
+
 ---
 
 [Back to README](../README.md)
