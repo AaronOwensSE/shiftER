@@ -24,25 +24,17 @@ The product backlog is informed by the requirements specification document, but 
 | Excel Integration | Low |
 | Qgenda Integration | Low |
 
-## Product Increments
-
-- Work as of Start of Scrum
-    - Version Control Setup
-    - Project Management Plan
-    - Tools and Technologies Decisions
-    - Requirements Specification
-    - Architecture Specification
-    - Development Environment Setup
-    - Successful End-to-End Test
-        - Sparse Frontend
-        - Sparse Backend Initialization
-        - Sparse Routing
-        - Sparse Controller Logic
-    - Partial Database Setup
-    - Partial Model API
-    - Partial Work on User-Centric Controllers
-    - Jest Setup
-    - Partial Model Testing
+| Not Started | In Progress | Done |
+|----|----|----|
+| Sign-Up, Login, and Authentication | Frontend | Work as of Start of Scrum |
+| Basic Group Functionality |  | Database Setup and Model API Completion |
+| Basic Draft and Schedule Functionality |  |  |
+| Fine-Grained Profile Management |  |  |
+| Fine-Grained Group Management |  |  |
+| Fine-Grained Draft Management |  |  |
+| Fine-Grained Schedule Management |  |  |
+| Excel Integration |  |  |
+| Qgenda Integration |  |  |
 
 ## Sprints
 
@@ -81,30 +73,50 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Database Seed Script Testing | 1 |
 | Update Architecture Diagrams | 3 |
 
-| Not Started | In Progress | Done |
-|----|----|----|
-|  | Update Architecture Diagrams | User Model Completion |
-|  | Obstacle: Physical Whiteboard Setup | User Model Testing |
-|  | Obstacle: Laptop Setup | Obstacle: Jest Setup and Teardown Configuration |
-|  |  | Session Model Testing | Session Model Completion |
-|  |  | Group Model Completion |
-|  |  | Group Model Testing |
-|  |  | Membership Model Completion |
-|  |  | Draft Model |
-|  |  | Participation Model |
-|  |  | Schedule Model |
-|  |  | Shift Model |
-|  |  | Database Schema Scripts |
-|  |  | Database Schema Script Testing |
-|  |  | Membership Model Testing |
-|  |  | Draft Model Testing |
-|  |  | Participation Model Testing |
-|  |  | Schedule Model Testing |
-|  |  | Shift Model Testing |
-|  |  | Database Seed Scripts |
-|  |  | Database Seed Script Testing |
+| Not Started | In Progress | Done | Failed |
+|----|----|----|----|
+|  |  | User Model Completion | Obstacle: Physical Whiteboard Setup |
+|  |  | User Model Testing | Obstacle: Laptop Setup |
+|  |  | Obstacle: Jest Setup and Teardown Configuration |  |
+|  |  | Session Model Testing | Session Model Completion |  |
+|  |  | Group Model Completion |  |
+|  |  | Group Model Testing |  |
+|  |  | Membership Model Completion |  |
+|  |  | Draft Model |  |
+|  |  | Participation Model |  |
+|  |  | Schedule Model |  |
+|  |  | Shift Model |  |
+|  |  | Database Schema Scripts |  |
+|  |  | Database Schema Script Testing |  |
+|  |  | Membership Model Testing |  |
+|  |  | Draft Model Testing |  |
+|  |  | Participation Model Testing |  |
+|  |  | Schedule Model Testing |  |
+|  |  | Shift Model Testing |  |
+|  |  | Database Seed Scripts |  |
+|  |  | Database Seed Script Testing |  |
+|  |  | Update Architecture Diagrams |  |
 
-#### Velocity: 
+#### Velocity: 38
+
+### Work as of Start of Scrum
+
+- Version Control Setup
+- Project Management Plan
+- Tools and Technologies Decisions
+- Requirements Specification
+- Architecture Specification
+- Development Environment Setup
+- Successful End-to-End Test
+    - Sparse Frontend
+    - Sparse Backend Initialization
+    - Sparse Routing
+    - Sparse Controller Logic
+- Partial Database Setup
+- Partial Model API
+- Partial Work on User-Centric Controllers
+- Jest Setup
+- Partial Model Testing
 
 ---
 
