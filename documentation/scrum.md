@@ -42,7 +42,21 @@ Sprints for this project will be 2 weeks in duration. A Fibonacci-based points s
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
 
+### Sprint 2: Frontend
+
+#### Velocity:
+
+#### Backlog
+
+| Feature | Points |
+|----|----|
+
+| Not Started | In Progress | Done | Failed |
+|----|----|----|----|
+
 ### Sprint 1: Database Setup and Model API Completion
+
+#### Velocity: 38
 
 #### Backlog
 
@@ -63,10 +77,10 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Draft Model Testing | 1 |
 | Participation Model | 3 |
 | Participation Model Testing | 1 |
-| Shift Model | 3 |
-| Shift Model Testing | 1 |
 | Schedule Model | 3 |
 | Schedule Model Testing | 1 |
+| Shift Model | 3 |
+| Shift Model Testing | 1 |
 | Database Schema Scripts | 3 |
 | Database Schema Script Testing | 1 |
 | Database Seed Scripts | 3 |
@@ -78,7 +92,8 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  |  | User Model Completion | Obstacle: Physical Whiteboard Setup |
 |  |  | User Model Testing | Obstacle: Laptop Setup |
 |  |  | Obstacle: Jest Setup and Teardown Configuration |  |
-|  |  | Session Model Testing | Session Model Completion |  |
+|  |  | Session Model Completion |  |
+|  |  | Session Model Testing |  |
 |  |  | Group Model Completion |  |
 |  |  | Group Model Testing |  |
 |  |  | Membership Model Completion |  |
@@ -96,8 +111,6 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  |  | Database Seed Scripts |  |
 |  |  | Database Seed Script Testing |  |
 |  |  | Update Architecture Diagrams |  |
-
-#### Velocity: 38
 
 ### Work as of Start of Scrum
 
