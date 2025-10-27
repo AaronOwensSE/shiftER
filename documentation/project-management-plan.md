@@ -14,25 +14,17 @@ Main source of requirements and main promoter of the system to other users. Also
 
 Working professionals primarily concerned with correct function, device compatibility, ease of use, and UI/UX.
 
-## Methods
+## Scrum Methodology
 
-### Iterative, Incremental Development
-
-Development will be focused on short-term increments and responsive to changing requirements. Increments will be feature-focused and drawn primarily from the requirements table with due consideration for priority level. Improvement of existing features and integration of new features will be performed iteratively.
-
-### Change Management
-
-Changes will be discussed between the product owner and the developer. Agreed upon changes will be translated to entries in the requirements table and considered for future development cycles.
-
-A more formal change management system may be considered after basic functionality is achieved and user stakeholders begin engaging with the app. Until then, development time is best spent on the app itself.
+After some initial stages of research and development under a generic IID methodology, I have decided to reorganize this project under Scrum to improve focus and velocity. The original requirements specification document (still available as a detailed list of initial project goals) has been used to develop a Scrum product backlog. Going forward, the Scrum documentation will be the authoritative document on project activity.
 
 ## Challenges
 
-Developer's (my) skillset is the primary bottleneck on this project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server before the days of mobile apps. The landscape has changed since then, and I will be using this project as an opportunity to learn JSX, React, React Native, Node.js, Express, PostgreSQL, Expo, and modern deployment platforms. This will take time.
+Developer's (my) skillset is the primary bottleneck on this project. I last built web applications using HTML, CSS, JavaScript, PHP, and MySQL on a home server before the days of mobile apps. The landscape has changed since then, and I will be using this project as an opportunity to learn JSX, React, React Native, Node.js, Express, PostgreSQL, Jest, Expo, and modern deployment platforms.
 
 With respect to project functionality, the main areas of difficulty I will need to research include authentication, push notifications, portability, responsiveness, backend configuration, and deployment. Core functions must also be tested and ensured across multiple users without overburdening user stakeholders.
 
-All of these challenges can be addressed with research, practice, and careful testing. Time is the main ingredient.
+With the adoption of Scrum, I hope to treat skill shortages as specific obstacles to be cleared from sprint backlogs. My intention is that skill gaps will be addressed succinctly to enable specific product increments.
 
 ---
 

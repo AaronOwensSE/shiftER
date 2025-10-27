@@ -7,6 +7,7 @@ An app for mobile and tablet devices that enables groups of professionals to com
 ## Documentation
 
 - [Project Management Plan](./documentation/project-management-plan.md)
+- [Scrum](./documentation/scrum.md)
 - [Requirements Specification](./documentation/requirements-specification.md)
 - [Tools and Technologies](./documentation/tools-and-technologies.md)
 - [Architecture Specification](./documentation/architecture-specification.md)
