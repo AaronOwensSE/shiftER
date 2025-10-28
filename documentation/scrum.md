@@ -66,8 +66,8 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Learn Figma | Obstacle: Install Whiteboard |  |  |
-| Wireframes | Site Map |  |  |
+| Obstacle: Learn Figma | Site Map | Obstacle: Install Whiteboard |  |
+| Wireframes |  |  |  |
 | Mockups |  |  |  |
 | Obstacle: React Native Refresher |  |  |  |
 | Obstacle: Expo Refresher |  |  |  |
