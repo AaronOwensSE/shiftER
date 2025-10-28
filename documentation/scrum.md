@@ -52,16 +52,16 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Feature | Points | Rationale |
 |----|----|----|
-| Obstacle: Install Whiteboard | 3 | (+) Unknowns, (-) Prior Preparation |
+| Obstacle: Install Whiteboard | 3 | (-) Prior Preparation, (+) Unknowns |
 | Site Map | 5 | (+) Foundational to Navigation |
 | Obstacle: Learn Figma | 5 | (+) Unknowns |
-| Wireframes | 13 | + Unknowns, (+) Foundational to Functionality, (+) Volume |
-| Mockups | 8 | (+) Unknowns, (+) Volume |
+| Wireframes | 13 | (+) Foundational to Functionality, (+) Volume, (+) Unknowns |
+| Mockups | 8 | (+) Volume, (+) Unknowns |
 | Obstacle: React Native Refresher | 2 | (-) Familiar |
 | Obstacle: Expo Refresher | 2 | (-) Familiar |
 | Obstacle: Navigation Framework Decisions | 5 | (+) Unknowns |
-| Code in React Native | 8 | (+) Unknowns, (+) Volume |
-| GUI Testing | 8 | (+) Unknowns, (+) Volume |
+| Code in React Native | 8 | (+) Volume, (+) Unknowns |
+| GUI Testing | 8 | (+) Volume, (+) Unknowns |
 | Obstacle: Laptop Setup | 3 | (-) Familiar, (+) Volume |
 
 | Not Started | In Progress | Done | Failed |
