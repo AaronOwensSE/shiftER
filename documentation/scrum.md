@@ -52,17 +52,17 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Feature | Points | Rationale |
 |----|----|----|
-| Obstacle: Install Whiteboard | 3 | + Unknowns, - Prior Preparation |
-| Site Map | 5 | + Foundational to Navigation |
-| Obstacle: Learn Figma | 5 | + Unknowns |
-| Wireframes | 13 | + Unknowns, + Foundational to Function, + Volume |
-| Mockups | 8 | + Unknowns, + Volume |
-| Obstacle: React Native Refresher | 2 | - Familiar |
-| Obstacle: Expo Refresher | 2 | - Familiar |
-| Obstacle: Navigation Framework Decisions | 5 | + Unknowns |
-| Code in React Native | 8 | + Unknowns, + Volume |
-| GUI Testing | 8 | + Unknowns, + Volume |
-| Obstacle: Laptop Setup | 3 | - Familiar, + Volume |
+| Obstacle: Install Whiteboard | 3 | (+) Unknowns, (-) Prior Preparation |
+| Site Map | 5 | (+) Foundational to Navigation |
+| Obstacle: Learn Figma | 5 | (+) Unknowns |
+| Wireframes | 13 | + Unknowns, (+) Foundational to Functionality, (+) Volume |
+| Mockups | 8 | (+) Unknowns, (+) Volume |
+| Obstacle: React Native Refresher | 2 | (-) Familiar |
+| Obstacle: Expo Refresher | 2 | (-) Familiar |
+| Obstacle: Navigation Framework Decisions | 5 | (+) Unknowns |
+| Code in React Native | 8 | (+) Unknowns, (+) Volume |
+| GUI Testing | 8 | (+) Unknowns, (+) Volume |
+| Obstacle: Laptop Setup | 3 | (-) Familiar, (+) Volume |
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
