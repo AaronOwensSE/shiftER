@@ -38,7 +38,9 @@ The product backlog is informed by the requirements specification document, but 
 
 ## Sprints
 
-Sprints for this project will be 2 weeks in duration. A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. A new Git branch will be used for each sprint.
+Sprints for this project will be 2 weeks in duration. A new Git branch will be used for each sprint.
+
+A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. Points should not correlate directly to man-hours. Their purpose is not to make time or cost estimates -- which Sutherland emphasizes we're terrible at -- but to estimate the *relative difficulty* of tasks (which we do well). Still, I find value in establishing a baseline so that a task designated a 3 this week won't be arbitrarily designated a 13 next month. I think 3 works well as a baseline estimate of a normal task with added complexity or unknown factors being common grounds for increase.
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
 
@@ -48,11 +50,33 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 #### Backlog
 
-| Feature | Points |
-|----|----|
+| Feature | Points | Rationale |
+|----|----|----|
+| Obstacle: Install Whiteboard | 3 | + Unknowns, - Prior Preparation |
+| Site Map | 5 | + Foundational to Navigation |
+| Obstacle: Learn Figma | 5 | + Unknowns |
+| Wireframes | 13 | + Unknowns, + Foundational to Function, + Volume |
+| Mockups | 8 | + Unknowns, + Volume |
+| Obstacle: React Native Refresher | 2 | - Familiar |
+| Obstacle: Expo Refresher | 2 | - Familiar |
+| Obstacle: Navigation Framework Decisions | 5 | + Unknowns |
+| Code in React Native | 8 | + Unknowns, + Volume |
+| GUI Testing | 8 | + Unknowns, + Volume |
+| Obstacle: Laptop Setup | 3 | - Familiar, + Volume |
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
+| Obstacle: Install Whiteboard |  |  |  |
+| Site Map |  |  |  |
+| Obstacle: Learn Figma |  |  |  |
+| Wireframes |  |  |  |
+| Mockups |  |  |  |
+| Obstacle: React Native Refresher |  |  |  |
+| Obstacle: Expo Refresher |  |  |  |
+| Obstacle: Navigation Framework Decisions |  |  |  |
+| Code in React Native |  |  |  |
+| GUI Testing |  |  |  |
+| Obstacle: Laptop Setup |  |  |  |
 
 ### Sprint 1: Database Setup and Model API Completion
 
