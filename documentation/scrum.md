@@ -10,6 +10,8 @@ Although this is a solo project, I think adopting the Scrum framework is the cor
 
 The product backlog is informed by the requirements specification document, but items have been reconceptualized to fit the Scrum structure. On future projects, I may forego the requirements specification and commit to more direct development of the product backlog.
 
+During frontend development (sprint 2), I found it useful to build out a set of user stories in order to create a site map that I was confident could be carried forward with minimal changes. However, at least for this project, at least for now, I prefer broader feature descriptions for the product backlog and will not be inserting user stories directly. They are currently available in a separate markdown file.
+
 | Feature | Priority |
 |----|----|
 | Database Setup and Model API Completion | High |
