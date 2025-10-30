@@ -1,8 +1,10 @@
 # User Stories
 
-I found it useful to create a list of user stories to better visualize a frontend site map. Currently, these are not being inserted directly into the product backlog. I developed them by thinking in terms of each type of user in relation to each database entity.
+I did not begin either the project or the project's shift over to Scrum with a set of user stories, but I found it useful to create this set to visualize a site map for the project's frontend. Currently, these user stories are not being inserted directly into the product backlog. On future projects, I may take that approach.
 
-| As a . . . | I want to . . . | so that I can . . . | In Relation to Database Entity |
+An additional column for a related database entity or relationship is added to help organize the list.
+
+| As a . . . | I want to . . . | so that I can . . . | Related Database Entity/Relationship |
 |----|----|----|----|
 | Nonuser | create an account | become a user. | Session |
 | User | log in | use the app. | Session |
