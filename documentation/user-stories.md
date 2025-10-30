@@ -10,6 +10,7 @@ I found it useful to create a list of user stories to better visualize a fronten
 | User | log out | remain secure. | Session |
 | User | see my profile | review my information. | User |
 | User | update my profile | respond to changes and remain secure. | User |
+| User | delete my account | become a nonuser. | User |
 | User | create a group | become the admin of a new group. | Group |
 | User | see a group's profile | review the information. | Group |
 | User | request to join a group | join the group. | Membership |
@@ -34,6 +35,7 @@ I found it useful to create a list of user stories to better visualize a fronten
 | Admin | decline requests to join my group | moderate membership. | Membership |
 | Admin | remove users from my group | moderate membership. | Membership |
 | Admin | appoint other admins | share admin privileges or leave my group. | Membership |
+| Admin | demote other admins | moderate membership. | Membership |
 | Admin | run a draft | create a schedule. | Draft |
 | Admin | pause/unpause a draft | referee participation or update the draft profile. | Draft |
 | Admin | update a draft profile | respond to changes. | Draft |
