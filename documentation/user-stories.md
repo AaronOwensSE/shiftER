@@ -46,3 +46,7 @@ I developed this list by thinking in terms of user types in relation to database
 | Admin | update a schedule | respond to changes. | Schedule |
 | Admin | delete a schedule | clean up my group's records or respond to changes. | Schedule |
 | Admin | create a schedule without running a draft | unilaterally produce a schedule. | Schedule |
+
+---
+
+[Back to README](../README.md)
