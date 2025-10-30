@@ -4,7 +4,7 @@ I did not begin the project, or even the project's adoption of Scrum, with a set
 
 I developed this list by thinking in terms of user types in relation to database tables. An additional column for the related database entity or relationship is added to help organize the list.
 
-| As a(n) . . . | I want to . . . | so that I can . . . | Related Database Entity/Relationship |
+| As a(n) ... | I want to ... | so that I can ... | Related Database Entity/Relationship |
 |----|----|----|----|
 | Nonuser | create an account | become a user. | Session |
 | User | log in | use the app. | Session |
