@@ -20,6 +20,12 @@ The project's backend will be divided primarily into *routes, controllers, and m
 
 ![A component diagram of the system](./component-diagram.png)
 
+### Frontend
+
+#### Site Map
+
+![A site map](./site-map.png)
+
 ### Database
 
 #### ER Diagram

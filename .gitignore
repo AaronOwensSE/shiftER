@@ -2,3 +2,4 @@ backend/.env
 backend/db/setup/env.ps1
 backend/node_modules/
 documentation/drawio-files/
+documentation/figma-files/
