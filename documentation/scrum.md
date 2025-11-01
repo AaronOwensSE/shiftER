@@ -58,7 +58,6 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Site Map | 5 | (+) Foundational to Navigation |
 | Obstacle: Learn Figma | 5 | (+) Unknowns |
 | Wireframes | 13 | (+) Foundational to Functionality, (+) Volume, (+) Unknowns |
-| Mockups | 8 | (+) Volume, (+) Unknowns |
 | Obstacle: React Native Refresher | 2 | (-) Familiar |
 | Obstacle: Expo Refresher | 2 | (-) Familiar |
 | Obstacle: Navigation Framework Decisions | 5 | (+) Unknowns |
@@ -68,10 +67,9 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Mockups | Wireframes | Obstacle: Install Whiteboard |  |
-| Obstacle: React Native Refresher |  | Site Map |  |
-| Obstacle: Expo Refresher |  | Obstacle: Learn Figma |  |
-| Obstacle: Navigation Framework Decisions |  |  |  |
+| Obstacle: React Native Refresher | Wireframes | Obstacle: Install Whiteboard |  |
+| Obstacle: Expo Refresher |  | Site Map |  |
+| Obstacle: Navigation Framework Decisions |  | Obstacle: Learn Figma |  |
 | Code in React Native |  |  |  |
 | GUI Testing |  |  |  |
 | Obstacle: Laptop Setup |  |  |  |
