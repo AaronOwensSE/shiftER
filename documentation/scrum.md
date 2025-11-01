@@ -68,9 +68,9 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Mockups | Obstacle: Learn Figma | Obstacle: Install Whiteboard |  |
-| Obstacle: React Native Refresher | Wireframes | Site Map |  |
-| Obstacle: Expo Refresher |  |  |  |
+| Mockups | Wireframes | Obstacle: Install Whiteboard |  |
+| Obstacle: React Native Refresher |  | Site Map |  |
+| Obstacle: Expo Refresher |  | Obstacle: Learn Figma |  |
 | Obstacle: Navigation Framework Decisions |  |  |  |
 | Code in React Native |  |  |  |
 | GUI Testing |  |  |  |
