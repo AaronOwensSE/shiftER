@@ -26,6 +26,10 @@ The map is not the terrain. As far as the computer is concerned, *code* is the D
 
 ![A site map](./site-map.png)
 
+#### Wireframes
+
+![Wireframes](./wireframes.png)
+
 ### Database
 
 #### ER Diagram
