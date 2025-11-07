@@ -67,12 +67,13 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Laptop Setup | Obstacle: Navigation Framework Decisions | Obstacle: Install Whiteboard |  |
-|  | Code in React Native | Site Map |  |
-|  | GUI Testing | Obstacle: Learn Figma |  |
+| Obstacle: Laptop Setup | Code in React Native | Obstacle: Install Whiteboard |  |
+|  | GUI Testing | Site Map |  |
+|  |  | Obstacle: Learn Figma |  |
 |  |  | Wireframes |  |
 |  |  | Obstacle: React Native Refresher |  |
 |  |  | Obstacle: Expo Refresher |  |
+|  |  | Obstacle: Navigation Framework Decisions |  |
 
 ### Sprint 1: Database Setup and Model API Completion
 
