@@ -13,7 +13,8 @@ export default BigLogo;
 const bigLogoStyle = StyleSheet.create({
     text: {
         textAlign: "center",
-        fontSize: 48,
-        fontWeight: "bold"
+        fontSize: 76,
+        fontWeight: "bold",
+        backgroundColor: "lightgrey"
     }
 });

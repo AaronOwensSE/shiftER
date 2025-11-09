@@ -18,7 +18,7 @@ const formFieldStyle = StyleSheet.create({
     },
 
     text: {
-        fontSize: 16
+        fontSize: 18
     },
 
     textInput: {

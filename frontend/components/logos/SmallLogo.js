@@ -13,7 +13,8 @@ export default SmallLogo;
 const smallLogoStyles = StyleSheet.create({
     text: {
         textAlign: "left",
-        fontSize: 38,
+        fontSize: 57,
         fontWeight: "bold",
+        backgroundColor: "lightgrey"
     }
 });

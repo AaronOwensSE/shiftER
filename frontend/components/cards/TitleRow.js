@@ -2,10 +2,12 @@
 
 import { View, Text, StyleSheet } from "react-native";
 
+import H3 from "../headings/H3.js";
+
 const TitleRow = ({ style, titleText, tagText }) => {
     return(
         <View style={[ titleRowStyles.view, style ]}>
-            <Text style={titleRowStyles.titleText}>{titleText}</Text>
+            <H3 style={titleRowStyles.titleText} text={titleText} />
             <Text style={titleRowStyles.tagText}>{tagText}</Text>
         </View>
     );
@@ -23,12 +25,10 @@ const titleRowStyles = StyleSheet.create({
 
     titleText: {
         textAlign: "left",
-        fontSize: 18,
-        fontWeight: "bold"
     },
 
     tagText: {
         textAlign: "right",
-        fontSize: 16,
+        fontSize: 18,
     }
 });

@@ -21,11 +21,11 @@ const textRowStyles = StyleSheet.create({
 
     leftText: {
         textAlign: "left",
-        fontSize: 16
+        fontSize: 18
     },
 
     rightText: {
         textAlign: "right",
-        fontSize: 16
+        fontSize: 18
     }
 });
