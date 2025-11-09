@@ -2,17 +2,17 @@
 
 import { View, StyleSheet } from "react-native";
 
-import BigLogo from "../components/BigLogo.js";
-import LoginForm from "../components/LoginForm.js";
+import BigLogo from "../components/logos/BigLogo.js";
+import LoginForm from "../components/forms/LoginForm.js";
 
 const Login = () => {
     return(
         <View style={[ loginStyles.screenView ]}>
             <BigLogo style={loginStyles.bigLogo} />
+
             <View style={loginStyles.contentView}>
                 <LoginForm style={loginStyles.loginForm} />
             </View>
-            <View />
         </View>
     );
 };
@@ -26,7 +26,7 @@ const loginStyles = StyleSheet.create({
     },
 
     bigLogo: {
-        paddingTop: 45
+        marginTop: 30
     },
 
     contentView: {
@@ -36,10 +36,6 @@ const loginStyles = StyleSheet.create({
     },
 
     loginForm: {
-        width: "85%"
-    },
-
-    bufferView: {
-        
+        width: "75%"
     }
 });
