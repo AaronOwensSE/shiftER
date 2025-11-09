@@ -4,7 +4,7 @@ import { Text, StyleSheet } from "react-native";
 
 const BigLogo = ({style}) => {
     return(
-        <Text style={ [ bigLogoStyle.text, style ] }>shiftER</Text>
+        <Text style={[ bigLogoStyle.text, style ]}>shiftER</Text>
     );
 };
 
