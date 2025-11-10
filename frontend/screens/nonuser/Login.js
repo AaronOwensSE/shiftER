@@ -2,8 +2,8 @@
 
 import { View, StyleSheet } from "react-native";
 
-import BigLogo from "../components/logos/BigLogo.js";
-import LoginForm from "../components/forms/LoginForm.js";
+import BigLogo from "../../components/logos/BigLogo.js";
+import LoginForm from "../../components/forms/LoginForm.js";
 
 const Login = () => {
     return(

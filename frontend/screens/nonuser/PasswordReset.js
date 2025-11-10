@@ -2,9 +2,9 @@
 
 import { View, StyleSheet } from "react-native";
 
-import BigLogo from "../components/logos/BigLogo.js";
-import ShifterButton from "../components/ShifterButton.js";
-import PasswordResetForm from "../components/forms/PasswordResetForm.js";
+import BigLogo from "../../components/logos/BigLogo.js";
+import ShifterButton from "../../components/ShifterButton.js";
+import PasswordResetForm from "../../components/forms/PasswordResetForm.js";
 
 const PasswordReset = () => {
     return(

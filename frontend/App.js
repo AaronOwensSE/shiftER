@@ -1,22 +1,26 @@
 "use strict";
 
+/*
 import { View, StyleSheet } from "react-native";
-import BigLogo from "./components/logos/BigLogo.js";
-import SmallLogo from "./components/logos/SmallLogo.js";
-import FormField from "./components/forms/FormField.js";
-import ShifterButton from "./components/ShifterButton.js";
-import LoginForm from "./components/forms/LoginForm.js";
-import NavBar from "./components/NavBar.js";
-import Dashboard from "./components/Dashboard.js";
-import TitleRow from "./components/cards/TitleRow.js";
-import TextRow from "./components/cards/TextRow.js";
-import Card from "./components/cards/Card.js";
-import Login from "./screens/Login.js";
-import RightAlignedRow from "./components/cards/RightAlignedRow.js";
-import PasswordResetForm from "./components/forms/PasswordResetForm.js";
-import PasswordReset from "./screens/PasswordReset.js";
-import AccountCreationForm from "./components/forms/AccountCreationForm.js";
-import AccountCreation from "./screens/AccountCreation.js";
+*/
+
+import Login from "./screens/nonuser/Login.js";
+import PasswordReset from "./screens/nonuser/PasswordReset.js";
+import AccountCreation from "./screens/nonuser/AccountCreation.js";
+
+import Groups from "./screens/user/Groups.js";
+import Drafts from "./screens/user/Drafts.js";
+import Schedules from "./screens/user/Schedules.js";
+import Alerts from "./screens/user/Alerts.js";
+import Profile from "./screens/user/Profile.js";
+
+import Group from "./screens/user/group/Group.js";
+import GroupSchedules from "./screens/user/group/GroupSchedules.js";
+import GroupMembership from "./screens/user/group/GroupMembership.js";
+import Schedule from "./screens/user/group/Schedule.js";
+
+import Draft from "./screens/user/group/draft/Draft.js";
+import DraftParticipation from "./screens/user/group/draft/DraftParticipation.js";
 
 export default function App() {
     return (
@@ -28,7 +32,6 @@ export default function App() {
 export default function App() {
     return (
         <View style={styles.view}>
-            <AccountCreationForm />
         </View>
     );
 };

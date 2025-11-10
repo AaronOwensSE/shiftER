@@ -2,9 +2,9 @@
 
 import { View, StyleSheet } from "react-native";
 
-import BigLogo from "../components/logos/BigLogo.js";
-import ShifterButton from "../components/ShifterButton.js";
-import AccountCreationForm from "../components/forms/AccountCreationForm.js";
+import BigLogo from "../../components/logos/BigLogo.js";
+import ShifterButton from "../../components/ShifterButton.js";
+import AccountCreationForm from "../../components/forms/AccountCreationForm.js";
 
 const AccountCreation = () => {
     return(
