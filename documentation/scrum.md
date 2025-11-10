@@ -15,7 +15,7 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 | Feature | Priority |
 |----|----|
 | Database Setup and Model API Completion | High |
-| Frontend | High |
+| Basic Frontend | High |
 | Sign-Up, Login, and Authentication | High |
 | Basic Group Functionality | High |
 | Basic Draft and Schedule Functionality | High |
@@ -28,9 +28,9 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Sign-Up, Login, and Authentication | Frontend | Work as of Start of Scrum |
+| Sign-Up, Login, and Authentication |  | Work as of Start of Scrum |
 | Basic Group Functionality |  | Database Setup and Model API Completion |
-| Basic Draft and Schedule Functionality |  |  |
+| Basic Draft and Schedule Functionality |  | Basic Frontend |
 | Fine-Grained Profile Management |  |  |
 | Fine-Grained Group Management |  |  |
 | Fine-Grained Draft Management |  |  |
@@ -46,9 +46,9 @@ A Fibonacci-based points system will be used during sprint planning to estimate 
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
 
-### Sprint 2: Frontend
+### Sprint 2: Basic Frontend
 
-#### Velocity:
+#### Velocity: 51
 
 #### Backlog
 
