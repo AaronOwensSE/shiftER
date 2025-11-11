@@ -16,10 +16,11 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 |----|----|
 | Database Setup and Model API Completion | High |
 | Basic Frontend | High |
-| Sign-Up, Login, and Authentication | High |
+| Sign-Up, Authentication, and Password Recovery | High |
+| Basic User Functionality | High |
 | Basic Group Functionality | High |
 | Basic Draft and Schedule Functionality | High |
-| Fine-Grained Profile Management | Medium |
+| Fine-Grained User Management | Medium |
 | Fine-Grained Group Management | Medium |
 | Fine-Grained Draft Management | Medium |
 | Fine-Grained Schedule Management | Medium |
@@ -28,10 +29,11 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Sign-Up, Login, and Authentication |  | Work as of Start of Scrum |
-| Basic Group Functionality |  | Database Setup and Model API Completion |
-| Basic Draft and Schedule Functionality |  | Basic Frontend |
-| Fine-Grained Profile Management |  |  |
+| Sign-Up, Authentication, and Password Recovery |  | Work as of Start of Scrum |
+| Basic User Functionality |  | Database Setup and Model API Completion |
+| Basic Group Functionality |  | Basic Frontend |
+| Basic Draft and Schedule Functionality |  |  |
+| Fine-Grained User Management |  |  |
 | Fine-Grained Group Management |  |  |
 | Fine-Grained Draft Management |  |  |
 | Fine-Grained Schedule Management |  |  |
