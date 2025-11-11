@@ -1,0 +1,21 @@
+"use strict";
+
+import { View, StyleSheet } from "react-native";
+
+const Card = ({ style, children }) => {
+    return(
+        <View style={[ cardStyles.view, style ]}>
+            {children}
+        </View>
+    );
+};
+
+export default Card;
+
+const cardStyles = StyleSheet.create({
+    view: {
+        width: 250, // Fallback dimension
+        padding: 5,
+        backgroundColor: "lightgrey"
+    }
+});

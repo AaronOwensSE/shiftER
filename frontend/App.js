@@ -1,36 +1,47 @@
 "use strict";
 
-// External Dependencies
-import React from "react";
+/*
+import { View, StyleSheet } from "react-native";
+*/
 
-// Internal Modules
-import HomePage from "./HomePage.js";
-import CreateUserPage from "./CreateUserPage.js";
+import Login from "./screens/nonuser/Login.js";
+import PasswordReset from "./screens/nonuser/PasswordReset.js";
+import AccountCreation from "./screens/nonuser/AccountCreation.js";
 
-const App = () => {
-  // Give App a variable called currentPage and a setter for that variable called setCurrentPage.
-  // The default value is "HomePage".
-  const [currentPage, setCurrentPage] = React.useState("Home");
+import Groups from "./screens/user/Groups.js";
+import Drafts from "./screens/user/Drafts.js";
+import Schedules from "./screens/user/Schedules.js";
+import Alerts from "./screens/user/Alerts.js";
+import Profile from "./screens/user/Profile.js";
 
-  // Superfluous? Could we just pass setCurrentPage?
-  // This function is made available to the components representing pages to be rendered.
-  /*const navigateTo = (page) => {
-    setCurrentPage(page);
-  };*/
+import Group from "./screens/user/group/Group.js";
+import GroupSchedules from "./screens/user/group/GroupSchedules.js";
+import GroupMembership from "./screens/user/group/GroupMembership.js";
+import Schedule from "./screens/user/group/Schedule.js";
 
-  // The value of currentPage determines which page component will be rendered.
-  const renderContent = () => {
-    switch (currentPage) {
-      case "Home":
-        return <HomePage navFunction={ setCurrentPage } />;
-      case "CreateUser":
-        return <CreateUserPage navFunction={ setCurrentPage } />;
-      default:
-        return null;
-    }
-  };
+import Draft from "./screens/user/group/draft/Draft.js";
+import DraftParticipation from "./screens/user/group/draft/DraftParticipation.js";
 
-  return renderContent();
+export default function App() {
+    return (
+        <Login />
+    );
 };
 
-export default App;
+/*
+export default function App() {
+    return (
+        <View style={styles.view}>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    view: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "white"
+    }
+});
+*/

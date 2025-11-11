@@ -10,13 +10,13 @@ The project's backend will be divided primarily into *routes, controllers, and m
 
 ## Diagrams
 
-*Code* is the DNA of any project. Architecture diagrams should guide and encourage coding and enable communication with stakeholders. Diagrams should not become a sinkhole for misallocated work, nor should they be relied upon as infallible descriptions of the system. With that precaution in mind, these are the diagrams I find to be of high value in visualizing this project from the outset.
+The map is not the terrain. As far as the computer is concerned, *code* is the DNA of any project. Architecture diagrams should guide and encourage coding and enable communication with stakeholders. Diagrams should not become a sinkhole for misallocated work, nor should they be relied upon as infallible descriptions of the system. The best diagrams come after iteration, and it's reasonable to update diagrams as we go. With that precaution in mind, these are the diagrams I find to be of high value in visualizing this project from the outset.
 
 ### System
 
 #### Component Diagram
 
-(Update needed to better reflect backend architecture.)
+(Outdated. Needs to be updated to better reflect frontend pages and backend architecture.)
 
 ![A component diagram of the system](./component-diagram.png)
 

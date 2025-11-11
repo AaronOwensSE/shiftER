@@ -10,14 +10,17 @@ Although this is a solo project, I think adopting the Scrum framework is the cor
 
 The product backlog is informed by the requirements specification document, but items have been reconceptualized to fit the Scrum structure. On future projects, I may forego the requirements specification and commit to more direct development of the product backlog.
 
+During frontend development (sprint 2), I found it useful to build out a set of user stories in order to create a site map that I was confident could be carried forward with minimal changes. However, at least for this project, at least for now, I prefer broader feature descriptions for the product backlog and will not be inserting user stories directly. They are currently available in a separate markdown file.
+
 | Feature | Priority |
 |----|----|
 | Database Setup and Model API Completion | High |
-| Frontend | High |
-| Sign-Up, Login, and Authentication | High |
+| Basic Frontend | High |
+| Sign-Up, Authentication, and Password Recovery | High |
+| Basic User Functionality | High |
 | Basic Group Functionality | High |
 | Basic Draft and Schedule Functionality | High |
-| Fine-Grained Profile Management | Medium |
+| Fine-Grained User Management | Medium |
 | Fine-Grained Group Management | Medium |
 | Fine-Grained Draft Management | Medium |
 | Fine-Grained Schedule Management | Medium |
@@ -26,10 +29,11 @@ The product backlog is informed by the requirements specification document, but 
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Sign-Up, Login, and Authentication | Frontend | Work as of Start of Scrum |
-| Basic Group Functionality |  | Database Setup and Model API Completion |
+| Sign-Up, Authentication, and Password Recovery |  | Work as of Start of Scrum |
+| Basic User Functionality |  | Database Setup and Model API Completion |
+| Basic Group Functionality |  | Basic Frontend |
 | Basic Draft and Schedule Functionality |  |  |
-| Fine-Grained Profile Management |  |  |
+| Fine-Grained User Management |  |  |
 | Fine-Grained Group Management |  |  |
 | Fine-Grained Draft Management |  |  |
 | Fine-Grained Schedule Management |  |  |
@@ -44,9 +48,9 @@ A Fibonacci-based points system will be used during sprint planning to estimate 
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
 
-### Sprint 2: Frontend
+### Sprint 2: Basic Frontend
 
-#### Velocity:
+#### Velocity: 51
 
 #### Backlog
 
@@ -56,7 +60,6 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Site Map | 5 | (+) Foundational to Navigation |
 | Obstacle: Learn Figma | 5 | (+) Unknowns |
 | Wireframes | 13 | (+) Foundational to Functionality, (+) Volume, (+) Unknowns |
-| Mockups | 8 | (+) Volume, (+) Unknowns |
 | Obstacle: React Native Refresher | 2 | (-) Familiar |
 | Obstacle: Expo Refresher | 2 | (-) Familiar |
 | Obstacle: Navigation Framework Decisions | 5 | (+) Unknowns |
@@ -66,17 +69,15 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Install Whiteboard |  |  |  |
-| Site Map |  |  |  |
-| Obstacle: Learn Figma |  |  |  |
-| Wireframes |  |  |  |
-| Mockups |  |  |  |
-| Obstacle: React Native Refresher |  |  |  |
-| Obstacle: Expo Refresher |  |  |  |
-| Obstacle: Navigation Framework Decisions |  |  |  |
-| Code in React Native |  |  |  |
-| GUI Testing |  |  |  |
-| Obstacle: Laptop Setup |  |  |  |
+|  |  | Obstacle: Install Whiteboard | Obstacle: Laptop Setup |
+|  |  | Site Map |  |
+|  |  | Obstacle: Learn Figma |  |
+|  |  | Wireframes |  |
+|  |  | Obstacle: React Native Refresher |  |
+|  |  | Obstacle: Expo Refresher |  |
+|  |  | Obstacle: Navigation Framework Decisions |  |
+|  |  | Code in React Native |  |
+|  |  | GUI Testing |  |
 
 ### Sprint 1: Database Setup and Model API Completion
 

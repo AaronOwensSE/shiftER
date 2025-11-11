@@ -11,6 +11,7 @@
 - JSX
 - React
 - React Native
+- Expo
 
 ## Backend
 
@@ -24,7 +25,7 @@
 
 ## Testing
 
-- Expo
+- Expo Go
 - Jest
 
 ## Deployment
