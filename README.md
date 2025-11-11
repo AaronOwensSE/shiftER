@@ -12,6 +12,7 @@ An app for mobile and tablet devices that enables groups of professionals to com
 - [User Stories](./documentation/user-stories.md)
 - [Tools and Technologies](./documentation/tools-and-technologies.md)
 - [Architecture Specification](./documentation/architecture-specification.md)
+- [Frontend Design](./documentation/frontend-design.md)
 - [Lessons Learned](./documentation/lessons-learned.md)
 
 ## License

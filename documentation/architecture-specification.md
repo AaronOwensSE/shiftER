@@ -20,16 +20,6 @@ The map is not the terrain. As far as the computer is concerned, *code* is the D
 
 ![A component diagram of the system](./component-diagram.png)
 
-### Frontend
-
-#### Site Map
-
-![A site map](./site-map.png)
-
-#### Wireframes
-
-![Wireframes](./wireframes.png)
-
 ### Database
 
 #### ER Diagram
