@@ -16,7 +16,7 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 |----|----|
 | Database Setup and Model API Completion | High |
 | Basic Frontend | High |
-| Sign-Up, Authentication, and Password Recovery | High |
+| Sign-Up, Authentication, Password Recovery, and Logout | High |
 | Basic User Functionality | High |
 | Basic Group Functionality | High |
 | Basic Draft and Schedule Functionality | High |
@@ -29,10 +29,9 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Sign-Up, Authentication, and Password Recovery |  | Work as of Start of Scrum |
-| Basic User Functionality |  | Database Setup and Model API Completion |
-| Basic Group Functionality |  | Basic Frontend |
-| Basic Draft and Schedule Functionality |  |  |
+| Basic User Functionality | Sign-Up, Authentication, Password Recovery, and Logout | Work as of Start of Scrum |
+| Basic Group Functionality |  | Database Setup and Model API Completion |
+| Basic Draft and Schedule Functionality |  | Basic Frontend |
 | Fine-Grained User Management |  |  |
 | Fine-Grained Group Management |  |  |
 | Fine-Grained Draft Management |  |  |
@@ -47,6 +46,60 @@ Sprints for this project will be 2 weeks in duration. A new Git branch will be u
 A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. Points should not correlate directly to man-hours. Their purpose is not to make time or cost estimates (which Sutherland emphasizes we're terrible at) but to estimate the *relative difficulty* of tasks (which we do well). I do find value in establishing a baseline so that a task designated a 3 this week won't be arbitrarily designated a 13 next month. I think 3 works well as a baseline estimate of a normal task with added complexity or unknown factors being common grounds for increase.
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
+
+### Sprint 3: Sign-Up, Authentication, Password Recovery, and Logout
+
+#### Velocity:
+
+#### Backlog
+
+| Feature | Points | Rationale |
+|----|----|----|
+| Frontend Navigation | 1 | (-) Familiar, (-) Brief |
+| Frontend Navigation Testing | 1 | (-) Familiar, (-) Brief |
+| Validation Functions | 1 | (-) Familiar, (-) Brief |
+| Validation Function Testing | 1 | (-) Familiar, (-) Brief |
+| Obstacle: React Native State Refresher | 2 | (-) Familiar |
+| Validation Message Component | 3 | (-) Brief, (+) Unknowns |
+| Validation Message Component Testing | 2 | (-) Brief |
+| Obstacle: HTTP Refresher | 2 | (-) Familiar |
+| Obstacle: Fetch API Refresher | 2 | (-) Familiar |
+| Obstacle: Routing/Express Refresher | 2 | (-) Familiar |
+| Obstacle: Learn Rate Limiting Techniques | 3 |  |
+| Sign-Up | 8 | (+) End-to-End, (+) Unknowns |
+| Sign-Up Testing | 5 | (+) Unknowns |
+| Obstacle: Cookies Refresher | 2 | (-) Familiar |
+| Authentication | 8 | (+) End-to-End, (+) Unknowns |
+| Authentication Testing | 5 | (+) Unknowns |
+| Obstacle: Learn Email | 3 |  |
+| Password Recovery | 8 | (+) End-to-End, (+) Unknowns |
+| Password Recovery Testing | 5 | (+) Unknowns |
+| Logout | 5 | (-) Brief, (+) End-to-End, (+) Unknowns |
+| Logout Testing | 3 | (-) Brief, (+) Unknowns |
+
+| Not Started | In Progress | Done | Failed |
+|----|----|----|----|
+| Frontend Navigation |  |  |  |
+| Frontend Navigation Testing |  |  |  |
+| Validation Functions |  |  |  |
+| Validation Function Testing |  |  |  |
+| Obstacle: React Native State Refresher |  |  |  |
+| Validation Message Component |  |  |  |
+| Validation Message Component Testing |  |  |  |
+| Obstacle: HTTP Refresher |  |  |  |
+| Obstacle: Fetch API Refresher |  |  |  |
+| Obstacle: Routing/Express Refresher |  |  |  |
+| Obstacle: Learn Rate Limiting Techniques |  |  |  |
+| Sign-Up |  |  |  |
+| Sign-Up Testing |  |  |  |
+| Obstacle: Cookies Refresher |  |  |  |
+| Authentication |  |  |  |
+| Authentication Testing |  |  |  |
+| Obstacle: Learn Email |  |  |  |
+| Password Recovery |  |  |  |
+| Password Recovery Testing |  |  |  |
+| Logout |  |  |  |
+| Logout Testing |  |  |  |
 
 ### Sprint 2: Basic Frontend
 
