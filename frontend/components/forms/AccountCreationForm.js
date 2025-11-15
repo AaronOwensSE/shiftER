@@ -5,7 +5,7 @@ import { View, StyleSheet } from "react-native";
 import FormField from "./FormField.js";
 import ShifterButton from "../ShifterButton.js";
 
-const AccountCreationForm = ({style}) => {
+const AccountCreationForm = ({ style, onNavigate }) => {
     return(
         <View style={[ accountCreationFormStyles.view, style ]}>
             <FormField style={accountCreationFormStyles.formField} text="User ID" />

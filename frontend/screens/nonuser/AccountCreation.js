@@ -6,14 +6,21 @@ import BigLogo from "../../components/logos/BigLogo.js";
 import ShifterButton from "../../components/ShifterButton.js";
 import AccountCreationForm from "../../components/forms/AccountCreationForm.js";
 
-const AccountCreation = () => {
+const AccountCreation = ({onNavigate}) => {
     return(
         <View style={accountCreationStyles.screenView}>
             <BigLogo style={accountCreationStyles.bigLogo} />
-            <ShifterButton style={accountCreationStyles.backButton} text="Back" />
+            
+            <ShifterButton
+                style={accountCreationStyles.backButton}
+                text="Back"
+                onPress={ () => { onNavigate("Login") } }
+            />
 
             <View style={accountCreationStyles.contentView}>
-                <AccountCreationForm style={accountCreationStyles.accountCreationForm} />
+                <AccountCreationForm
+                    style={accountCreationStyles.accountCreationForm} onNavigate={onNavigate}
+                />
             </View>
         </View>
     );

@@ -1,8 +1,6 @@
 "use strict";
 
-/*
-import { View, StyleSheet } from "react-native";
-*/
+import React from "react";
 
 import Login from "./screens/nonuser/Login.js";
 import PasswordReset from "./screens/nonuser/PasswordReset.js";
@@ -22,26 +20,36 @@ import Schedule from "./screens/user/group/Schedule.js";
 import Draft from "./screens/user/group/draft/Draft.js";
 import DraftParticipation from "./screens/user/group/draft/DraftParticipation.js";
 
-export default function App() {
-    return (
-        <Login />
-    );
-};
-
 /*
+I find the React naming standards for functions passed down through props to be a little odd.
+
+My instinct is to call the prop that carries setScreen down to its child components something like
+navFunction so that the end result is <Child onPress={ () => { navFunction("screen") } } />. I read
+this as, "When pressed, perform the navigation function for 'screen'."
+
+But onNavigate appears to be the standard instead, resulting in the grammatically awkward
+<Child onPress={ () => { onNavigate("screen") } } />. I read this as, "When pressed, perform the
+when navigated for 'screen'," which makes no sense.
+
+The correct reading is something more like, "When pressed, perform the function for when you want to
+navigate for 'screen'." The critical point is that onNavigate belongs to the parent, not the child.
+*/
+
 export default function App() {
-    return (
-        <View style={styles.view}>
-        </View>
-    );
+    const [ screen, setScreen ] = React.useState("Login");
+
+    return renderScreen(screen, setScreen);
 };
 
-const styles = StyleSheet.create({
-    view: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "white"
+function renderScreen(screen, setScreen) {
+    switch (screen) {
+        case "Login":
+            return <Login onNavigate={setScreen} />;
+        case "AccountCreation":
+            return <AccountCreation onNavigate={setScreen} />;
+        case "PasswordReset":
+            return <PasswordReset onNavigate={setScreen} />;
+        default:
+            return null;
     }
-});
-*/
+}
