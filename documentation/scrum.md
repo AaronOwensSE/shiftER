@@ -81,9 +81,9 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |----|----|----|----|
 | Obstacle: React Native State Refresher | Frontend Navigation | Obstacle: HTTP Refresher |  |
 | Validation Message Component | Frontend Navigation Testing | Obstacle: Fetch API Refresher |  |
-| Validation Message Component Testing | Validation Function Testing | Obstacle: Routing/Express Refresher |  |
+| Validation Message Component Testing |  | Obstacle: Routing/Express Refresher |  |
 | Obstacle: Learn Rate Limiting Techniques |  | Validation Functions |  |
-| Sign-Up |  |  |  |
+| Sign-Up |  | Validation Function Testing |  |
 | Sign-Up Testing |  |  |  |
 | Obstacle: Cookies Refresher |  |  |  |
 | Authentication |  |  |  |
