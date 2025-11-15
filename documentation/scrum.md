@@ -79,19 +79,14 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: React Native State Refresher | Frontend Navigation | Obstacle: HTTP Refresher |  |
-| Validation Message Component | Frontend Navigation Testing | Obstacle: Fetch API Refresher |  |
-| Validation Message Component Testing |  | Obstacle: Routing/Express Refresher |  |
-| Obstacle: Learn Rate Limiting Techniques |  | Validation Functions |  |
-| Sign-Up |  | Validation Function Testing |  |
-| Sign-Up Testing |  |  |  |
-| Obstacle: Cookies Refresher |  |  |  |
-| Authentication |  |  |  |
-| Authentication Testing |  |  |  |
-| Obstacle: Learn Email |  |  |  |
-| Password Recovery |  |  |  |
-| Password Recovery Testing |  |  |  |
-| Logout |  |  |  |
+| Obstacle: Learn Rate Limiting Techniques | Validation Message Component | Obstacle: HTTP Refresher |  |
+| Obstacle: Cookies Refresher | Validation Message Component Testing | Obstacle: Fetch API Refresher |  |
+| Authentication | Sign-Up | Obstacle: Routing/Express Refresher |  |
+| Authentication Testing | Sign-Up Testing | Validation Functions |  |
+| Obstacle: Learn Email |  | Validation Function Testing |  |
+| Password Recovery |  | Obstacle: React Native State Refresher |  |
+| Password Recovery Testing |  | Frontend Navigation |  |
+| Logout |  | Frontend Navigation Testing |  |
 | Logout Testing |  |  |  |
 
 ### Sprint 2: Basic Frontend
