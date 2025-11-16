@@ -1,14 +1,40 @@
 "use strict";
 
+import React from "react";
 import { View, StyleSheet } from "react-native";
 
 import FormField from "./FormField.js";
+import ValidationMessage from "./ValidationMessage.js";
 import ShifterButton from "../ShifterButton.js";
 
+import validation from "../../validation.js";
+import constants from "../../constants.js";
+
 const AccountCreationForm = ({ style, onNavigate }) => {
+    const [ userId, setUserId ] = React.useState("");
+    const userIdValid = validation.isValidUserId(userId);
+    let userIdValidationMessage;
+
+    if (userIdValid) {
+        userIdValidationMessage = "";
+    } else {
+        userIdValidationMessage =
+            `${constants.USER_ID_MIN_LENGTH} to ${constants.USER_ID_MAX_LENGTH} characters`;
+    }
+
     return(
         <View style={[ accountCreationFormStyles.view, style ]}>
-            <FormField style={accountCreationFormStyles.formField} text="User ID" />
+            <FormField
+                style={accountCreationFormStyles.formField}
+                text="User ID"
+                onChangeText={setUserId}
+            />
+            
+            <ValidationMessage
+                style={accountCreationFormStyles.validationMessage}
+                text={userIdValidationMessage}
+            />
+
             <FormField style={accountCreationFormStyles.formField} text="Display Name" />
             <FormField style={accountCreationFormStyles.formField} text="Email" />
             <FormField style={accountCreationFormStyles.formField} text="Confirm Email" />
@@ -41,6 +67,10 @@ const accountCreationFormStyles = StyleSheet.create({
     formField: {
         width: "100%",
         margin: 5
+    },
+
+    validationMessage: {
+        width: "100%"
     },
 
     shifterButton: {
