@@ -79,15 +79,16 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Learn Rate Limiting Techniques | Validation Message Component | Obstacle: HTTP Refresher |  |
-| Obstacle: Cookies Refresher | Validation Message Component Testing | Obstacle: Fetch API Refresher |  |
-| Authentication | Sign-Up | Obstacle: Routing/Express Refresher |  |
-| Authentication Testing | Sign-Up Testing | Validation Functions |  |
+| Obstacle: Learn Rate Limiting Techniques | Sign-Up | Obstacle: HTTP Refresher |  |
+| Obstacle: Cookies Refresher | Sign-Up Testing | Obstacle: Fetch API Refresher |  |
+| Authentication |  | Obstacle: Routing/Express Refresher |  |
+| Authentication Testing |  | Validation Functions |  |
 | Obstacle: Learn Email |  | Validation Function Testing |  |
 | Password Recovery |  | Obstacle: React Native State Refresher |  |
 | Password Recovery Testing |  | Frontend Navigation |  |
 | Logout |  | Frontend Navigation Testing |  |
-| Logout Testing |  |  |  |
+| Logout Testing |  | Validation Message Component |  |
+|  |  | Validation Message Component Testing |  |
 
 ### Sprint 2: Basic Frontend
 
