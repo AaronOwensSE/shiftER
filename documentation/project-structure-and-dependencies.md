@@ -1,6 +1,6 @@
 # Project Structure and Dependencies
 
-This project is a *single Git repo* consisting of three separately configured projects, each with their own dependencies.
+This project is a *single Git repo* consisting of two separately configured projects, each with their own dependencies.
 
 Each directory has a *separate .gitignore file.*
 
@@ -29,21 +29,6 @@ The backend directory contains a *Node.js project* written primarily in JavaScri
 - Express - Routing and HTTP request handling
 - bcrypt - Password hashing
 - pg - PostgreSQL database interface
-
-#### Development
-
-- cross-env - Command line environment variables across OS platforms
-- Jest - JavaScript testing
-
-## Shared
-
-The shared directory contains a *Node.js project* used to store and test code shared between frontend and backend.
-
-### Dependencies
-
-#### Production
-
-- dotenv - Environment variables accessible in code
 
 #### Development
 
