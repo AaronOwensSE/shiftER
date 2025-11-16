@@ -2,6 +2,8 @@
 
 import { View, Text, StyleSheet } from "react-native";
 
+import typeScale from "../../type-scale.js";
+
 const TextRow = ({ style, leftText, rightText }) => {
     return(
         <View style={[ textRowStyles.view, style ]}>
@@ -21,11 +23,11 @@ const textRowStyles = StyleSheet.create({
 
     leftText: {
         textAlign: "left",
-        fontSize: 18
+        fontSize: typeScale.BASE
     },
 
     rightText: {
         textAlign: "right",
-        fontSize: 18
+        fontSize: typeScale.BASE
     }
 });
