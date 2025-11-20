@@ -17,6 +17,10 @@ The frontend directory contains an *Expo project* written primarily in React Nat
 - React - Custom UI components with props, style, and state
 - React Native - React for mobile devices
 
+#### Development
+
+- Express - Routing and HTTP request handling
+
 ## Backend
 
 The backend directory contains a *Node.js project* written primarily in JavaScript.
