@@ -4,11 +4,12 @@ import { TouchableHighlight, Text, StyleSheet } from "react-native";
 
 import typeScale from "../type-scale.js";
 
-const ShifterButton = ({ style, text, onPress = () => {} }) => {
+const ShifterButton = ({ style, text, disabled = false, onPress = () => {} }) => {
     return(
         <TouchableHighlight
             style={[ shifterButtonStyles.touchableHighlight, style ]}
             underlayColor="dimgrey"
+            disabled={disabled}
             onPress={onPress}
         >
             <Text style={shifterButtonStyles.text}>{text}</Text>
