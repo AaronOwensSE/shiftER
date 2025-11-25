@@ -68,7 +68,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Obstacle: Learn Rate Limiting Techniques | 3 |  |
 | Sign-Up | 8 | (+) End-to-End, (+) Unknowns |
 | Sign-Up Testing | 5 | (+) Unknowns |
-| Obstacle: Cookies Refresher | 2 | (-) Familiar |
+| Obstacle: Learn React Native Keychain | 3 |  |
 | Authentication | 8 | (+) End-to-End, (+) Unknowns |
 | Authentication Testing | 5 | (+) Unknowns |
 | Obstacle: Learn Email | 3 |  |
@@ -79,16 +79,18 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Learn Rate Limiting Techniques | Sign-Up | Obstacle: HTTP Refresher |  |
-| Obstacle: Cookies Refresher | Sign-Up Testing | Obstacle: Fetch API Refresher |  |
-| Authentication |  | Obstacle: Routing/Express Refresher |  |
-| Authentication Testing |  | Validation Functions |  |
-| Obstacle: Learn Email |  | Validation Function Testing |  |
-| Password Recovery |  | Obstacle: React Native State Refresher |  |
-| Password Recovery Testing |  | Frontend Navigation |  |
-| Logout |  | Frontend Navigation Testing |  |
-| Logout Testing |  | Validation Message Component |  |
+| Obstacle: Learn Rate Limiting Techniques | Obstacle: Learn React Native Keychain | Obstacle: HTTP Refresher |  |
+| Obstacle: Learn Email | Authentication | Obstacle: Fetch API Refresher |  |
+| Password Recovery | Authentication Testing | Obstacle: Routing/Express Refresher |  |
+| Password Recovery Testing |  | Validation Functions |  |
+| Logout |  | Validation Function Testing |  |
+| Logout Testing |  | Obstacle: React Native State Refresher |  |
+|  |  | Frontend Navigation |  |
+|  |  | Frontend Navigation Testing |  |
+|  |  | Validation Message Component |  |
 |  |  | Validation Message Component Testing |  |
+|  |  | Sign-Up |  |
+|  |  | Sign-Up Testing |  |
 
 ### Sprint 2: Basic Frontend
 
