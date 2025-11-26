@@ -68,7 +68,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Obstacle: Learn Rate Limiting Techniques | 3 |  |
 | Sign-Up | 8 | (+) End-to-End, (+) Unknowns |
 | Sign-Up Testing | 5 | (+) Unknowns |
-| Obstacle: Learn React Native Keychain | 3 |  |
+| Obstacle: Learn Expo SecureStore | 3 |  |
 | Authentication | 8 | (+) End-to-End, (+) Unknowns |
 | Authentication Testing | 5 | (+) Unknowns |
 | Obstacle: Learn Email | 3 |  |
@@ -79,9 +79,9 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Learn Rate Limiting Techniques | Obstacle: Learn React Native Keychain | Obstacle: HTTP Refresher |  |
-| Obstacle: Learn Email | Authentication | Obstacle: Fetch API Refresher |  |
-| Password Recovery | Authentication Testing | Obstacle: Routing/Express Refresher |  |
+| Obstacle: Learn Rate Limiting Techniques | Authentication | Obstacle: HTTP Refresher |  |
+| Obstacle: Learn Email | Authentication Testing | Obstacle: Fetch API Refresher |  |
+| Password Recovery |  | Obstacle: Routing/Express Refresher |  |
 | Password Recovery Testing |  | Validation Functions |  |
 | Logout |  | Validation Function Testing |  |
 | Logout Testing |  | Obstacle: React Native State Refresher |  |
@@ -91,6 +91,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  |  | Validation Message Component Testing |  |
 |  |  | Sign-Up |  |
 |  |  | Sign-Up Testing |  |
+|  |  | Obstacle: Learn Expo SecureStore |  |
 
 ### Sprint 2: Basic Frontend
 
