@@ -1,12 +1,12 @@
 # Lessons Learned
 
-## Sprint 3 (Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout) Retrospective
+## Sprint 3 Retrospective: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
 ### What went right?
 
 I was able to confirm that my approach to authentication is broadly correct and commonly used, and that it will work for this project.
 
-I was also able to put the pieces together end-to-end and see them function: React Native -> Fetch API -> HTTP -> Express API endpoints (routes) -> middleware (controllers, models) -> PostgreSQL queries, and the return of session data all the way back to the frontend. There is something encouraging about seeing data travel up that chain and back down again without error. I feel have a relatively firm grasp of backend architecture and feel comfortable working in the space between API endpoints and databases.
+I was also able to put the pieces together end-to-end and see them function: React Native -> Fetch API -> HTTP -> Express API endpoints (routes) -> middleware (controllers, models) -> PostgreSQL queries, and the return of session data all the way back to the frontend. There is something encouraging about seeing data travel up that chain and back down again without error. Backend development in particular feels natural to me. I am very comfortable working in the space between API endpoints and databases.
 
 Additionally, I built upon my knowledge of HTTP requests, Express, deployment architecture, HTTPS, and project configuration. Statement coverage testing in Jest continues, and integration testing is also being performed (although I have not yet begun to automate it).
 
@@ -22,7 +22,7 @@ I have already done a pass on the product backlog, breaking compound items out i
 
 With the holidays approaching and external challenges cropping up, I have decided to take a week off before beginning sprint 4.
 
-## Sprint 2 (Basic Frontend) Retrospective
+## Sprint 2 Retrospective: Basic Frontend
 
 ### Frontend Design
 
