@@ -1,6 +1,28 @@
 # Lessons Learned
 
-## Sprint 2 (Basic Frontend) Retrospective
+## Sprint 3 Retrospective: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
+
+### What went right?
+
+I was able to confirm that my approach to authentication is broadly correct and commonly used, and that it will work for this project.
+
+I was also able to put the pieces together end-to-end and see them function: React Native -> Fetch API -> HTTP -> Express API endpoints (routes) -> middleware (controllers, models) -> PostgreSQL queries, and the return of session data all the way back to the frontend. There is something encouraging about seeing data travel up that chain and back down again without error. Backend development in particular feels natural to me. I am very comfortable working in the space between API endpoints and databases.
+
+Additionally, I built upon my knowledge of HTTP requests, Express, deployment architecture, HTTPS, and project configuration. Statement coverage testing in Jest continues, and integration testing is also being performed (although I have not yet begun to automate it).
+
+### What went wrong?
+
+I tried to do too much during this sprint and then tried to double down and extend the sprint to a third week to complete my goals. I knew that was a mistake, but I did it anyway. The predictable result was burnout and very little additional progress. I have calculated velocity for this sprint as the points accrued during the first two weeks and disregarded the incomplete progress of the third week. Items I did not get to (password recovery and logout) and items I worked on but did not complete (session authentication) have been returned to the product backlog. My calculated velocity was not particularly bad, but I failed to see that in the moment. What should have been a successful sprint with the same amount of work felt like a failure. I need to do a better job of breaking work down into its component parts.
+
+React Native continues to be a learning experience. I can follow the basics well enough, but I may need to devote some time to solidifying my understanding of hooks, component re-rendering triggers, and appropriate use of async functions in hooks.
+
+### What changes are needed?
+
+I have already done a pass on the product backlog, breaking compound items out into their singular components. This should make it easier to find reasonable product increments to tackle and prevent me from messing with sprint duration.
+
+With the holidays approaching and external challenges cropping up, I have decided to take a week off before beginning sprint 4.
+
+## Sprint 2 Retrospective: Basic Frontend
 
 ### Frontend Design
 

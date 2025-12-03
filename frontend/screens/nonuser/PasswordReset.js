@@ -6,11 +6,15 @@ import BigLogo from "../../components/logos/BigLogo.js";
 import ShifterButton from "../../components/ShifterButton.js";
 import PasswordResetForm from "../../components/forms/PasswordResetForm.js";
 
-const PasswordReset = () => {
+const PasswordReset = ({onNavigate}) => {
     return(
         <View style={passwordResetStyles.screenView}>
             <BigLogo style={passwordResetStyles.bigLogo} />
-            <ShifterButton style={passwordResetStyles.backButton} text="Back" />
+            <ShifterButton
+                style={passwordResetStyles.backButton}
+                text="Back"
+                onPress={ () => { onNavigate("Login") } }    
+            />
 
             <View style={passwordResetStyles.contentView}>
                 <PasswordResetForm style={passwordResetStyles.passwordResetForm} />

@@ -5,7 +5,7 @@ import { View, StyleSheet } from "react-native";
 import FormField from "./FormField.js";
 import ShifterButton from "../ShifterButton.js";
 
-const LoginForm = ({style}) => {
+const LoginForm = ({ style, onNavigate }) => {
     return(
         <View style={[ loginFormStyles.outerView, style ]}>
             <FormField style={loginFormStyles.formField} text="User ID" />
@@ -16,11 +16,13 @@ const LoginForm = ({style}) => {
                 <ShifterButton
                     style={loginFormStyles.recoverPasswordButton}
                     text={"Reset\nPassword"}
+                    onPress={ () => { onNavigate("PasswordReset") } }
                 />
 
                 <ShifterButton
                     style={loginFormStyles.createAccountButton}
                     text={"Create\nAccount"}
+                    onPress={ () => { onNavigate("AccountCreation") } }
                 />
             </View>
         </View>

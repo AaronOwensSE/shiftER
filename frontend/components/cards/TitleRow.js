@@ -3,6 +3,7 @@
 import { View, Text, StyleSheet } from "react-native";
 
 import H3 from "../headings/H3.js";
+import typeScale from "../../type-scale.js";
 
 const TitleRow = ({ style, titleText, tagText }) => {
     return(
@@ -29,6 +30,6 @@ const titleRowStyles = StyleSheet.create({
 
     tagText: {
         textAlign: "right",
-        fontSize: 18,
+        fontSize: typeScale.BASE,
     }
 });

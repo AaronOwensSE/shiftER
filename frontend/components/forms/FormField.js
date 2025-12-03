@@ -2,11 +2,18 @@
 
 import { View, Text, TextInput, StyleSheet } from "react-native";
 
-const FormField = ({ style, text, obscureInput = false }) => {
+import typeScale from "../../type-scale.js";
+
+const FormField = ({ style, text, obscureInput = false, onChangeText }) => {
     return(
         <View style={[ formFieldStyle.view, style ]}>
             <Text style={formFieldStyle.text}>{text}</Text>
-            <TextInput style={formFieldStyle.textInput} secureTextEntry={obscureInput} />
+            
+            <TextInput
+                style={formFieldStyle.textInput}
+                secureTextEntry={obscureInput}
+                onChangeText={ (newText) => { onChangeText(newText); } }
+            />
         </View>
     );
 };
@@ -18,7 +25,7 @@ const formFieldStyle = StyleSheet.create({
     },
 
     text: {
-        fontSize: 18
+        fontSize: typeScale.BASE
     },
 
     textInput: {
