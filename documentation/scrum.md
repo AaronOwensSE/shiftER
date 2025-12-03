@@ -14,9 +14,13 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 
 | Feature | Priority |
 |----|----|
-| Database Setup and Model API Completion | High |
+| Database Setup | High |
+| Database Model API Completion | High |
 | Basic Frontend | High |
-| Sign-Up, Authentication, Password Recovery, and Logout | High |
+| Sign-Up | High |
+| Login Authentication | High |
+| Session Authentication | High |
+| Logout | High |
 | Basic User Functionality | High |
 | Basic Group Functionality | High |
 | Basic Draft and Schedule Functionality | High |
@@ -24,18 +28,22 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 | Fine-Grained Group Management | Medium |
 | Fine-Grained Draft Management | Medium |
 | Fine-Grained Schedule Management | Medium |
+| Password Recovery | Low |
 | Excel Integration | Low |
 | Qgenda Integration | Low |
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Basic User Functionality | Sign-Up, Authentication, Password Recovery, and Logout | Work as of Start of Scrum |
-| Basic Group Functionality |  | Database Setup and Model API Completion |
-| Basic Draft and Schedule Functionality |  | Basic Frontend |
-| Fine-Grained User Management |  |  |
+| Session Authentication |  | Work as of Start of Scrum |
+| Logout |  | Database Setup |
+| Basic User Functionality |  | Database Model API Completion |
+| Basic Group Functionality |  | Basic Frontend |
+| Basic Draft and Schedule Functionality |  | Sign-Up |
+| Fine-Grained User Management |  | Login Authentication |
 | Fine-Grained Group Management |  |  |
 | Fine-Grained Draft Management |  |  |
 | Fine-Grained Schedule Management |  |  |
+| Password Recovery |  |  |
 | Excel Integration |  |  |
 | Qgenda Integration |  |  |
 
@@ -47,9 +55,9 @@ A Fibonacci-based points system will be used during sprint planning to estimate 
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
 
-### Sprint 3: Sign-Up, Authentication, Password Recovery, and Logout
+### Sprint 3: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
-#### Velocity:
+#### Velocity: 46
 
 #### Backlog
 
@@ -69,8 +77,10 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Sign-Up | 8 | (+) End-to-End, (+) Unknowns |
 | Sign-Up Testing | 5 | (+) Unknowns |
 | Obstacle: Learn Expo SecureStore | 3 |  |
-| Authentication | 8 | (+) End-to-End, (+) Unknowns |
-| Authentication Testing | 5 | (+) Unknowns |
+| Login Authentication | 8 | (+) End-toEnd, (+) Unknowns |
+| Login Authentication Testing | 5 | (+) Unknowns |
+| Session Authentication | 8 | (+) End-to-End, (+) Unknowns |
+| Session Authentication Testing | 5 | (+) Unknowns |
 | Obstacle: Learn Email | 3 |  |
 | Password Recovery | 8 | (+) End-to-End, (+) Unknowns |
 | Password Recovery Testing | 5 | (+) Unknowns |
@@ -79,19 +89,21 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Learn Rate Limiting Techniques | Authentication | Obstacle: HTTP Refresher |  |
-| Obstacle: Learn Email | Authentication Testing | Obstacle: Fetch API Refresher |  |
-| Password Recovery |  | Obstacle: Routing/Express Refresher |  |
-| Password Recovery Testing |  | Validation Functions |  |
-| Logout |  | Validation Function Testing |  |
-| Logout Testing |  | Obstacle: React Native State Refresher |  |
-|  |  | Frontend Navigation |  |
-|  |  | Frontend Navigation Testing |  |
+|  |  | Obstacle: HTTP Refresher | Session Authentication |
+|  |  | Obstacle: Fetch API Refresher | Session Authentication Testing |
+|  |  | Obstacle: Routing/Express Refresher | Obstacle: Learn Rate Limiting Techniques |
+|  |  | Validation Functions | Obstacle: Learn Email |
+|  |  | Validation Function Testing | Password Recovery |
+|  |  | Obstacle: React Native State Refresher | Password Recovery Testing |
+|  |  | Frontend Navigation | Logout |
+|  |  | Frontend Navigation Testing | Logout Testing |
 |  |  | Validation Message Component |  |
 |  |  | Validation Message Component Testing |  |
 |  |  | Sign-Up |  |
 |  |  | Sign-Up Testing |  |
 |  |  | Obstacle: Learn Expo SecureStore |  |
+|  |  | Login Authentication |  |
+|  |  | Login Authentication Testing |  |
 
 ### Sprint 2: Basic Frontend
 
