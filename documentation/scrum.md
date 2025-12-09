@@ -23,27 +23,31 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 | Logout | High |
 | Basic User Functionality | High |
 | Basic Group Functionality | High |
+| Deployment Setup | High |
+| CI/CD Setup | High |
 | Basic Draft and Schedule Functionality | High |
 | Fine-Grained User Management | Medium |
 | Fine-Grained Group Management | Medium |
 | Fine-Grained Draft Management | Medium |
 | Fine-Grained Schedule Management | Medium |
 | Password Recovery | Low |
+| Rate Limiting | Low |
 | Excel Integration | Low |
 | Qgenda Integration | Low |
 
 | Not Started | In Progress | Done |
 |----|----|----|
-| Session Authentication |  | Work as of Start of Scrum |
-| Logout |  | Database Setup |
-| Basic User Functionality |  | Database Model API Completion |
-| Basic Group Functionality |  | Basic Frontend |
-| Basic Draft and Schedule Functionality |  | Sign-Up |
+| Basic User Functionality | Session Authentication | Work as of Start of Scrum |
+| Basic Group Functionality | Logout | Database Setup |
+| Basic Draft and Schedule Functionality |  | Database Model API Completion |
+| Deployment Setup |  | Basic Frontend |
+| CI/CD Setup |  | Sign-Up |
 | Fine-Grained User Management |  | Login Authentication |
 | Fine-Grained Group Management |  |  |
 | Fine-Grained Draft Management |  |  |
 | Fine-Grained Schedule Management |  |  |
 | Password Recovery |  |  |
+| Rate Limiting |  |  |
 | Excel Integration |  |  |
 | Qgenda Integration |  |  |
 
@@ -54,6 +58,48 @@ Sprints for this project will be 2 weeks in duration. A new Git branch will be u
 A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. Points should not correlate directly to man-hours. Their purpose is not to make time or cost estimates (which Sutherland emphasizes we're terrible at) but to estimate the *relative difficulty* of tasks (which we do well). I do find value in establishing a baseline so that a task designated a 3 this week won't be arbitrarily designated a 13 next month. I think 3 works well as a baseline estimate of a normal task with added complexity or unknown factors being common grounds for increase.
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
+
+### Sprint 4: Session Authentication and Logout Revisited
+
+#### Velocity: 
+
+#### Backlog
+
+| Feature | Points | Rationale |
+|----|----|----|
+| Obstacle: Learn React Native Hooks | 5 | (+) New Paradigm |
+| Frontend: Session ID Secure Storage | 2 | (-) Brief |
+| Frontend: Session ID Retrieval | 2 | (-) Brief |
+| Frontend: Session ID Authentication Request | 1 | (-) Brief, (-) Familiar |
+| Frontend: Screen Display Logic | 5 | (+) Unknowns |
+| Backend: Session ID Authentication API Endpoint | 1 | (-) Brief, (-) Familiar |
+| Backend: Session ID Authentication Controller Logic | 5 | (+) Code Organization Decisions |
+| Backend: Session ID Authentication Unit Testing | 3 |  |
+| Session Authentication Integration Testing | 5 | (+) End-to-End |
+| Frontend: End Session Request | 1 | (-) Brief, (-) Familiar |
+| Frontend: Delete Stored Session ID | 2 | (-) Brief |
+| Backend: End Session API Endpoint | 1 | (-) Brief, (-) Familiar |
+| Backend: End Session Controller Logic | 3 |  |
+| Backend: End Session Unit Testing | 3 |  |
+| End Session Integration Testing | 5 | (+) End-to-End |
+
+| Not Started | In Progress | Done | Failed |
+|----|----|----|----|
+| Obstacle: Learn React Native Hooks |  |  |  |
+| Frontend: Session ID Secure Storage |  |  |  |
+| Frontend: Session ID Retrieval |  |  |  |
+| Frontend: Session ID Authentication Request |  |  |  |
+| Frontend: Screen Display Logic |  |  |  |
+| Backend: Session ID Authentication API Endpoint |  |  |  |
+| Backend: Session ID Authentication Controller Logic |  |  |  |
+| Backend: Session ID Authentication Unit Testing |  |  |  |
+| Session Authentication Integration Testing |  |  |  |
+| Frontend: End Session Request |  |  |  |
+| Frontend: Delete Stored Session ID |  |  |  |
+| Backend: End Session API Endpoint |  |  |  |
+| Backend: End Session Controller Logic |  |  |  |
+| Backend: End Session Unit Testing |  |  |  |
+| End Session Integration Testing |  |  |  |
 
 ### Sprint 3: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
