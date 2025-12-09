@@ -23,9 +23,9 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 | Logout | High |
 | Basic User Functionality | High |
 | Basic Group Functionality | High |
+| Basic Draft and Schedule Functionality | High |
 | Deployment Setup | High |
 | CI/CD Setup | High |
-| Basic Draft and Schedule Functionality | High |
 | Fine-Grained User Management | Medium |
 | Fine-Grained Group Management | Medium |
 | Fine-Grained Draft Management | Medium |
@@ -73,7 +73,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Frontend: Session ID Authentication Request | 1 | (-) Brief, (-) Familiar |
 | Frontend: Screen Display Logic | 5 | (+) Unknowns |
 | Backend: Session ID Authentication API Endpoint | 1 | (-) Brief, (-) Familiar |
-| Backend: Session ID Authentication Controller Logic | 5 | (+) Code Organization Decisions |
+| Backend: Session ID Authentication Controller Logic | 3 |  |
 | Backend: Session ID Authentication Unit Testing | 3 |  |
 | Session Authentication Integration Testing | 5 | (+) End-to-End |
 | Frontend: End Session Request | 1 | (-) Brief, (-) Familiar |
@@ -81,7 +81,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Backend: End Session API Endpoint | 1 | (-) Brief, (-) Familiar |
 | Backend: End Session Controller Logic | 3 |  |
 | Backend: End Session Unit Testing | 3 |  |
-| End Session Integration Testing | 5 | (+) End-to-End |
+| Logout Integration Testing | 5 | (+) End-to-End |
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
@@ -99,7 +99,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Backend: End Session API Endpoint |  |  |  |
 | Backend: End Session Controller Logic |  |  |  |
 | Backend: End Session Unit Testing |  |  |  |
-| End Session Integration Testing |  |  |  |
+| Logout Integration Testing |  |  |  |
 
 ### Sprint 3: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
