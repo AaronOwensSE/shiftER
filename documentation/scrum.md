@@ -85,14 +85,11 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Obstacle: Learn React Native Hooks |  |  |  |
-| Frontend: Session ID Secure Storage |  |  |  |
+| Obstacle: Learn React Native Hooks | Backend: Session ID Authentication Unit Testing | Backend: Session ID Authentication API Endpoint |  |
+| Frontend: Session ID Secure Storage |  | Backend: Session ID Authentication Controller Logic |  |
 | Frontend: Session ID Retrieval |  |  |  |
 | Frontend: Session ID Authentication Request |  |  |  |
 | Frontend: Screen Display Logic |  |  |  |
-| Backend: Session ID Authentication API Endpoint |  |  |  |
-| Backend: Session ID Authentication Controller Logic |  |  |  |
-| Backend: Session ID Authentication Unit Testing |  |  |  |
 | Session Authentication Integration Testing |  |  |  |
 | Frontend: End Session Request |  |  |  |
 | Frontend: Delete Stored Session ID |  |  |  |
