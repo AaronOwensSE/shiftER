@@ -11,10 +11,10 @@ import RightAlignedRow from "../../components/cards/RightAlignedRow.js";
 import ShifterButton from "../../components/ShifterButton.js";
 import TextRow from "../../components/cards/TextRow.js";
 
-const Alerts = () => {
+const Alerts = ({ onNavigate }) => {
     return(
         <View style={alertStyles.screenView}>
-            <Dashboard style={alertStyles.dashboard} />
+            <Dashboard style={alertStyles.dashboard} onNavigate={onNavigate} />
             
             <ScrollView
                 style={alertStyles.scrollView}

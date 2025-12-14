@@ -5,13 +5,17 @@ import { View, StyleSheet } from "react-native";
 import BigLogo from "../../components/logos/BigLogo.js";
 import LoginForm from "../../components/forms/LoginForm.js";
 
-const Login = ({onNavigate}) => {
+const Login = ({onNavigate, onLogin}) => {
     return(
         <View style={[ loginStyles.screenView ]}>
             <BigLogo style={loginStyles.bigLogo} />
 
             <View style={loginStyles.contentView}>
-                <LoginForm style={loginStyles.loginForm} onNavigate={onNavigate} />
+                <LoginForm
+                    style={loginStyles.loginForm}
+                    onNavigate={onNavigate}
+                    onLogin={onLogin}
+                />
             </View>
         </View>
     );

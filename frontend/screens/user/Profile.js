@@ -10,10 +10,10 @@ import FormField from "../../components/forms/FormField.js";
 import RightAlignedRow from "../../components/cards/RightAlignedRow.js";
 import ShifterButton from "../../components/ShifterButton.js";
 
-const Profile = () => {
+const Profile = ({ onNavigate, onLogout }) => {
     return(
         <View style={profileStyles.screenView}>
-            <Dashboard style={profileStyles.dashboard} />
+            <Dashboard style={profileStyles.dashboard} onNavigate={onNavigate} />
             
             <ScrollView
                 style={profileStyles.scrollView}
@@ -72,7 +72,9 @@ const Profile = () => {
                     </RightAlignedRow>
                 </Card>
 
-                <ShifterButton style={profileStyles.shifterButton} text="Log Out" />
+                <ShifterButton
+                    style={profileStyles.shifterButton} text="Log Out" onPress={onLogout}
+                />
             </ScrollView>
         </View>
     );

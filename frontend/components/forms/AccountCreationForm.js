@@ -31,6 +31,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
     const password2ValidationMessage = getPassword2ValidationMessage();
 
     // Not comfortable defining these inside, but this is apparently the standard.
+
+    // Need to rewrite these as const funcName = () => {};
+    // This is the React standard.
     function formStateIsValid() {
         return validation.isValidUserId(userId)
             && validation.isValidUserName(displayName)
