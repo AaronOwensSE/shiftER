@@ -85,16 +85,18 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | Not Started | In Progress | Done | Failed |
 |----|----|----|----|
-| Logout Integration Testing | Backend: End Session API Endpoint | Backend: Session ID Authentication API Endpoint |  |
-|  | Backend: End Session Controller Logic | Backend: Session ID Authentication Controller Logic |  |
-|  | Backend: End Session Unit Testing | Backend: Session ID Authentication Unit Testing |  |
-|  | Frontend: End Session Request | Obstacle: Learn React Native Hooks |  |
+| Frontend: End Session Request | Backend: End Session Unit Testing | Backend: Session ID Authentication API Endpoint |  |
+| Logout Integration Testing |  | Backend: Session ID Authentication Controller Logic |  |
+|  |  | Backend: Session ID Authentication Unit Testing |  |
+|  |  | Obstacle: Learn React Native Hooks |  |
 |  |  | Frontend: Session ID Secure Storage |  |
 |  |  | Frontend: Session ID Retrieval |  |
 |  |  | Frontend: Session ID Authentication Request |  |
 |  |  | Frontend: Screen Display Logic |  |
 |  |  | Session Authentication Integration Testing |  |
 |  |  | Frontend: Delete Stored Session ID |  |
+|  |  | Backend: End Session API Endpoint |  |
+|  |  | Backend: End Session Controller Logic |  |
 
 ### Sprint 3: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
