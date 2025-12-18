@@ -6,16 +6,16 @@ Here's a rather embarrassing oversight I ran into recently.
 
 Suppose we have a file with a default export object bundling various items, as well as a non-default export object bundling some other items. (To give an example of why this might happen, I conditionally export helper functions for testing in my test environment while leaving them out of the default export that's available in the production environment.)
 
-```JavaScript my-exports.js
+```JavaScript
 const stuffToExport = { some, stuff };
 export default stuffToExport;
 
 export const thingsToExport = { different, things };
 ```
 
-Then:
+Then, in another file:
 
-```JavaScript doing-things.js
+```JavaScript
 import thingsToExport from "my-exports.js";
 
 doSomething(thingsToExport.different);   // Nope
@@ -23,7 +23,7 @@ doSomething(thingsToExport.different);   // Nope
 
 This does not work because *thingsToExport* in this scope is a renaming of the default export. It contains *some* and *stuff*, not *different* and *things*. What we need to do is this:
 
-```JavaScript doing-things.js
+```JavaScript
 import { thingsToExport } from "my-exports.js";
 
 doSomething(thingsToExport.different);  // Yep
