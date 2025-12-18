@@ -1,5 +1,38 @@
 # Lessons Learned
 
+## Imports in JavaScript Revisited
+
+Here's a rather embarrassing oversight I ran into recently.
+
+Suppose we have a file with a default export object bundling various items, as well as a non-default object bundling some other items. (To give an example of why this might happen, I conditionally export helper functions for testing in my test environment while leaving them out of the default export that's available in the production environment.)
+
+```JavaScript my-exports.js
+const stuffToExport = { some, stuff };
+export default stuffToExport;
+
+export const thingsToExport = { different, things };
+```
+
+Then:
+
+```JavaScript doing-things.js
+import thingsToExport from "my-exports.js";
+
+doSomething(thingsToExport.different);   // Nope
+```
+
+This does not work because *thingsToExport* in this scope is a renaming of the default export. It contains *some* and *stuff*, not *different* and *things*. What we need to do is this:
+
+```JavaScript doing-things.js
+import { thingsToExport } from "my-exports.js";
+
+doSomething(thingsToExport.different);  // Yep
+```
+
+Now it works. Duh.
+
+Growth mindset.
+
 ## Sprint 3 Retrospective: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
 ### What went right?
