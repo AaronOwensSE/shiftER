@@ -4,7 +4,7 @@
 
 Here's a rather embarrassing oversight I ran into recently.
 
-Suppose we have a file with a default export object bundling various items, as well as a non-default object bundling some other items. (To give an example of why this might happen, I conditionally export helper functions for testing in my test environment while leaving them out of the default export that's available in the production environment.)
+Suppose we have a file with a default export object bundling various items, as well as a non-default export object bundling some other items. (To give an example of why this might happen, I conditionally export helper functions for testing in my test environment while leaving them out of the default export that's available in the production environment.)
 
 ```JavaScript my-exports.js
 const stuffToExport = { some, stuff };
