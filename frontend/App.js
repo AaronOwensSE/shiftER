@@ -108,9 +108,35 @@ export default function App() {
     };
 
     const handleLogout = async () => {
-        await SecureStore.deleteItemAsync("sessionId");
-        setSessionId(null);
-        setSessionIdAuthenticated(false);
+        const route = "/log-out";
+        const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
+        const url = urlParts.join("");
+
+        const response = await fetch(
+            url,
+            {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    id: sessionId
+                })
+            }
+        );
+
+        if (response.ok) {
+            const result = await response.json();
+
+            if (result.ok) {
+                await SecureStore.deleteItemAsync("sessionId");
+                setSessionId(null);
+                setSessionIdAuthenticated(false);
+                setScreen("Login");
+            }
+
+            // Should anything more be done if the logout request fails?
+            // Removing the session ID locally doesn't remove the session from the database.
+            // Error message on profile screen?
+        }
     };
 
     if (sessionIdAuthenticated) {
