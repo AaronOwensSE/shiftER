@@ -1,5 +1,21 @@
 # Lessons Learned
 
+## Sprint 4 Retrospective: Session Authentication and Logout
+
+### What went right?
+
+Taking on a less aggressive workload made project work more enjoyable and gave me more time to think and research. This was the correct call for work-life balance. I have a more practical sense of what I can get done in a two-week period (while working an unrelated full-time job) without burning out. This doesn't mean velocity won't improve from here. It just means that improvements to velocity will come from increased expertise and the compounding benefits of foundational work.
+
+Moving deeper into React hooks improved my understanding of the subtleties of state and how asynchronous side effects fit into component rendering.
+
+### What went wrong?
+
+Surprisingly, there weren't any noteworthy challenges this time around. My overwork on the previous sprint at least had the benefit of setting me up with a template for everything that needed to be built on this sprint. There were few unknowns, and everything passed testing with minimal difficulty.
+
+### What changes are needed?
+
+I need to get on a downward slope toward wrapping up this project. There are many additional projects I'd like to get moving on, lots of DSA practice I need to be doing, lots of completed projects I need to review and put on my GitHub, and lots of math and computer science books I want to read. None of that is related to this project, but the stress of waiting on all those things has been building for some time. The cascade of functionality falling into place now that much of the foundational work is done needs to begin within the next sprint or two. Remaining unknowns of high priority include: deployment, CI/CD, app publishing, timer management for schedule functionality, and testing with a real set of users.
+
 ## Imports in JavaScript Revisited
 
 Here's a rather embarrassing oversight I ran into recently.
