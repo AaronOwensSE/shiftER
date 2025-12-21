@@ -8,10 +8,10 @@ import Card from "../../components/cards/Card.js";
 import TitleRow from "../../components/cards/TitleRow.js";
 import TextRow from "../../components/cards/TextRow.js";
 
-const Drafts = () => {
+const Drafts = ({ onNavigate }) => {
     return(
         <View style={draftStyles.screenView}>
-            <Dashboard style={draftStyles.dashboard} />
+            <Dashboard style={draftStyles.dashboard} onNavigate={onNavigate} />
             
             <ScrollView
                 style={draftStyles.scrollView}

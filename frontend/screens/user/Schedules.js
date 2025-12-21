@@ -9,10 +9,10 @@ import Card from "../../components/cards/Card.js";
 import TitleRow from "../../components/cards/TitleRow.js";
 import TextRow from "../../components/cards/TextRow.js";
 
-const Schedules = () => {
+const Schedules = ({ onNavigate }) => {
     return(
         <View style={scheduleStyles.screenView}>
-            <Dashboard style={scheduleStyles.dashboard} />
+            <Dashboard style={scheduleStyles.dashboard} onNavigate={onNavigate} />
             
             <ScrollView
                 style={scheduleStyles.scrollView}

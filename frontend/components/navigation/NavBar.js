@@ -4,7 +4,7 @@ import { View, ScrollView, StyleSheet } from "react-native";
 
 import ShifterButton from "../ShifterButton.js";
 
-const NavBar = ({style}) => {
+const NavBar = ({style, onNavigate}) => {
     // Outer View helps control weird positioning behavior of ScrollView.
     return(
         <View style={[ navBarStyles.view, style ]}>
@@ -13,11 +13,35 @@ const NavBar = ({style}) => {
                 contentContainerStyle={navBarStyles.scrollViewContentContainer}
                 horizontal
             >
-                <ShifterButton style={navBarStyles.firstShifterButton} text="Groups" />
-                <ShifterButton style={navBarStyles.midShifterButton} text="Drafts" />
-                <ShifterButton style={navBarStyles.midShifterButton} text="Schedules" />
-                <ShifterButton style={navBarStyles.midShifterButton} text="Profile" />
-                <ShifterButton style={navBarStyles.lastShifterButton} text="Alerts" />
+                <ShifterButton
+                    style={navBarStyles.firstShifterButton}
+                    text="Groups"
+                    onPress={ () => {onNavigate("Groups")} }
+                />
+
+                <ShifterButton
+                    style={navBarStyles.midShifterButton}
+                    text="Drafts"
+                    onPress={ () => {onNavigate("Drafts")} }
+                />
+
+                <ShifterButton
+                    style={navBarStyles.midShifterButton}
+                    text="Schedules"
+                    onPress={ () => {onNavigate("Schedules")} }
+                />
+
+                <ShifterButton
+                    style={navBarStyles.midShifterButton}
+                    text="Profile"
+                    onPress={ () => {onNavigate("Profile")} }
+                />
+
+                <ShifterButton
+                    style={navBarStyles.lastShifterButton}
+                    text="Alerts"
+                    onPress={ () => {onNavigate("Alerts")} }
+                />
             </ScrollView>
         </View>
     );

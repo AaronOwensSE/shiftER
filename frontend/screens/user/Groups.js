@@ -8,10 +8,10 @@ import Card from "../../components/cards/Card.js";
 import TitleRow from "../../components/cards/TitleRow.js";
 import TextRow from "../../components/cards/TextRow.js";
 
-const Groups = () => {
+const Groups = ({ onNavigate }) => {
     return(
         <View style={groupStyles.screenView}>
-            <Dashboard style={groupStyles.dashboard} />
+            <Dashboard style={groupStyles.dashboard} onNavigate={onNavigate} />
             
             <ScrollView
                 style={groupStyles.scrollView}
