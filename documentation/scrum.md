@@ -35,16 +35,16 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 | Excel Integration | Low |
 | Qgenda Integration | Low |
 
-| Not Started | In Progress | Done |
+| To Do | Doing | Done |
 |----|----|----|
-| Basic User Functionality | Session Authentication | Work as of Start of Scrum |
-| Basic Group Functionality | Logout | Database Setup |
+| Basic User Functionality |  | Work as of Start of Scrum |
+| Basic Group Functionality |  | Database Setup |
 | Basic Draft and Schedule Functionality |  | Database Model API Completion |
 | Deployment Setup |  | Basic Frontend |
 | CI/CD Setup |  | Sign-Up |
 | Fine-Grained User Management |  | Login Authentication |
-| Fine-Grained Group Management |  |  |
-| Fine-Grained Draft Management |  |  |
+| Fine-Grained Group Management |  | Session Authentication |
+| Fine-Grained Draft Management |  | Logout |
 | Fine-Grained Schedule Management |  |  |
 | Password Recovery |  |  |
 | Rate Limiting |  |  |
@@ -61,7 +61,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 ### Sprint 4: Session Authentication and Logout Revisited
 
-#### Velocity: 
+#### Velocity: 42
 
 #### Backlog
 
@@ -83,9 +83,9 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Backend: End Session Unit Testing | 3 |  |
 | Logout Integration Testing | 5 | (+) End-to-End |
 
-| Not Started | In Progress | Done | Failed |
+| To Do | Doing | Done | Failed |
 |----|----|----|----|
-| Logout Integration Testing | Frontend: End Session Request | Backend: Session ID Authentication API Endpoint |  |
+|  |  | Backend: Session ID Authentication API Endpoint |  |
 |  |  | Backend: Session ID Authentication Controller Logic |  |
 |  |  | Backend: Session ID Authentication Unit Testing |  |
 |  |  | Obstacle: Learn React Native Hooks |  |
@@ -98,6 +98,8 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 |  |  | Backend: End Session API Endpoint |  |
 |  |  | Backend: End Session Controller Logic |  |
 |  |  | Backend: End Session Unit Testing |  |
+|  |  | Frontend: End Session Request |  |
+|  |  | Logout Integration Testing |  |
 
 ### Sprint 3: Sign-Up, Login Authentication, Session Authentication, Password Recovery, and Logout
 
@@ -131,7 +133,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Logout | 5 | (-) Brief, (+) End-to-End, (+) Unknowns |
 | Logout Testing | 3 | (-) Brief, (+) Unknowns |
 
-| Not Started | In Progress | Done | Failed |
+| To Do | Doing | Done | Failed |
 |----|----|----|----|
 |  |  | Obstacle: HTTP Refresher | Session Authentication |
 |  |  | Obstacle: Fetch API Refresher | Session Authentication Testing |
@@ -168,7 +170,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | GUI Testing | 8 | (+) Volume, (+) Unknowns |
 | Obstacle: Laptop Setup | 3 | (-) Familiar, (+) Volume |
 
-| Not Started | In Progress | Done | Failed |
+| To Do | Doing | Done | Failed |
 |----|----|----|----|
 |  |  | Obstacle: Install Whiteboard | Obstacle: Laptop Setup |
 |  |  | Site Map |  |
@@ -213,7 +215,7 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 | Database Seed Script Testing | 1 |
 | Update Architecture Diagrams | 3 |
 
-| Not Started | In Progress | Done | Failed |
+| To Do | Doing | Done | Failed |
 |----|----|----|----|
 |  |  | User Model Completion | Obstacle: Physical Whiteboard Setup |
 |  |  | User Model Testing | Obstacle: Laptop Setup |
