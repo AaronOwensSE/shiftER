@@ -1,11 +1,18 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import { View, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import BigLogo from "../../components/logos/BigLogo.js";
 import ShifterButton from "../../components/ShifterButton.js";
 import AccountCreationForm from "../../components/forms/AccountCreationForm.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const AccountCreation = ({onNavigate}) => {
     return(
         <View style={accountCreationStyles.screenView}>
@@ -28,6 +35,9 @@ const AccountCreation = ({onNavigate}) => {
 
 export default AccountCreation;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const accountCreationStyles = StyleSheet.create({
     screenView: {
         flex: 1,

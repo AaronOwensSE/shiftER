@@ -1,8 +1,12 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import FormField from "./FormField.js";
 import ValidationMessage from "./ValidationMessage.js";
 import ShifterButton from "../ShifterButton.js";
@@ -10,6 +14,9 @@ import ShifterButton from "../ShifterButton.js";
 import validation from "../../validation.js";
 import constants from "../../constants.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
     const [ userId, setUserId ] = React.useState("");
     const [ displayName, setDisplayName ] = React.useState("");
@@ -29,21 +36,17 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
     const email2ValidationMessage = getEmail2ValidationMessage();
     const password1ValidationMessage = getPassword1ValidationMessage();
     const password2ValidationMessage = getPassword2ValidationMessage();
-
-    // Not comfortable defining these inside, but this is apparently the standard.
-
-    // Need to rewrite these as const funcName = () => {};
-    // This is the React standard.
-    function formStateIsValid() {
+    
+    const formStateIsValid = () => {
         return validation.isValidUserId(userId)
             && validation.isValidUserName(displayName)
             && validation.isValidUserEmail(email1)
             && validation.isValidUserPassword(password1)
             && email1 == email2
             && password1 == password2;
-    }
+    };
 
-    function getUserIdValidationMessage() {
+    const getUserIdValidationMessage = () => {
         const userIdValid = validation.isValidUserId(userId);
         let userIdValidationMessage;
 
@@ -55,9 +58,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         }
 
         return userIdValidationMessage;
-    }
+    };
 
-    function getDisplayNameValidationMessage() {
+    const getDisplayNameValidationMessage = () => {
         const displayNameValid = validation.isValidUserName(displayName);
         let displayNameValidationMessage;
 
@@ -69,9 +72,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         }
 
         return displayNameValidationMessage;
-    }
+    };
 
-    function getEmail1ValidationMessage() {
+    const getEmail1ValidationMessage = () => {
         const email1Valid = validation.isValidUserEmail(email1);
         let email1ValidationMessage;
 
@@ -83,9 +86,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         }
 
         return email1ValidationMessage;
-    }
+    };
 
-    function getEmail2ValidationMessage() {
+    const getEmail2ValidationMessage = () => {
         const email2Valid = validation.isValidUserEmail(email2);
         let email2ValidationMessage;
 
@@ -97,9 +100,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         }
 
         return email2ValidationMessage;
-    }
+    };
 
-    function getPassword1ValidationMessage() {
+    const getPassword1ValidationMessage = () => {
         const password1Valid = validation.isValidUserPassword(password1);
         let password1ValidationMessage;
 
@@ -111,9 +114,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         }
 
         return password1ValidationMessage;
-    }
+    };
 
-    function getPassword2ValidationMessage() {
+    const getPassword2ValidationMessage = () => {
         const password2Valid = validation.isValidUserPassword(password2);
         let password2ValidationMessage;
 
@@ -125,9 +128,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         }
 
         return password2ValidationMessage;
-    }
+    };
 
-    async function createUser() {
+    const createUser = async () => {
         const route = "/create-user";
         const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
         const url = urlParts.join("");
@@ -157,7 +160,7 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         } else {
             setCreateAccountMessage("Connection error.");
         }
-    }
+    };
 
     return(
         <ScrollView
@@ -190,14 +193,20 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
                 text={displayNameValidationMessage}
             />
 
-            <FormField style={accountCreationFormStyles.formField} text="Email" onChangeText={setEmail1} />
+            <FormField
+                style={accountCreationFormStyles.formField} text="Email" onChangeText={setEmail1}
+            />
 
             <ValidationMessage
                 style={accountCreationFormStyles.validationMessage}
                 text={email1ValidationMessage}
             />
 
-            <FormField style={accountCreationFormStyles.formField} text="Confirm Email" onChangeText={setEmail2} />
+            <FormField 
+                style={accountCreationFormStyles.formField}
+                text="Confirm Email"
+                onChangeText={setEmail2}
+            />
 
             <ValidationMessage
                 style={accountCreationFormStyles.validationMessage}
@@ -245,6 +254,9 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
 
 export default AccountCreationForm;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const accountCreationFormStyles = StyleSheet.create({
     scrollView: {
         width: 250, // Fallback sizing

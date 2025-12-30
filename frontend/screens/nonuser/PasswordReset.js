@@ -1,11 +1,18 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import { View, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import BigLogo from "../../components/logos/BigLogo.js";
 import ShifterButton from "../../components/ShifterButton.js";
 import PasswordResetForm from "../../components/forms/PasswordResetForm.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const PasswordReset = ({onNavigate}) => {
     return(
         <View style={passwordResetStyles.screenView}>
@@ -25,6 +32,9 @@ const PasswordReset = ({onNavigate}) => {
 
 export default PasswordReset;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const passwordResetStyles = StyleSheet.create({
     screenView: {
         flex: 1,

@@ -1,7 +1,11 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import { View, ScrollView, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import GroupDashboard from "../../../components/navigation/GroupDashboard.js";
 import ShifterButton from "../../../components/ShifterButton.js";
 import H1 from "../../../components/headings/H1.js";
@@ -11,6 +15,9 @@ import TitleRow from "../../../components/cards/TitleRow.js";
 import FormField from "../../../components/forms/FormField.js";
 import RightAlignedRow from "../../../components/cards/RightAlignedRow.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const GroupMembership = () => {
 	return(
 		<View style={groupMembershipStyles.screenView}>
@@ -107,6 +114,9 @@ const GroupMembership = () => {
 
 export default GroupMembership;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const groupMembershipStyles = StyleSheet.create({
 	screenView: {
 		flex: 1,

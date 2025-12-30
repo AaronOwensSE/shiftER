@@ -1,13 +1,20 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import * as SecureStore from "expo-secure-store";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import FormField from "./FormField.js";
 import ValidationMessage from "./ValidationMessage.js";
 import ShifterButton from "../ShifterButton.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const LoginForm = ({ style, onNavigate, onLogin }) => {
     const [ userId, setUserId ] = React.useState("");
     const [ password, setPassword ] = React.useState("");
@@ -85,6 +92,9 @@ const LoginForm = ({ style, onNavigate, onLogin }) => {
 
 export default LoginForm;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const loginFormStyles = StyleSheet.create({
     outerView: {
         width: 250, // Fallback sizing

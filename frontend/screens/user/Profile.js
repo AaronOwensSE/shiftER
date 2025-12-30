@@ -1,7 +1,11 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import { View, ScrollView, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import Dashboard from "../../components/navigation/Dashboard.js";
 import H1 from "../../components/headings/H1.js";
 import Card from "../../components/cards/Card.js";
@@ -10,6 +14,9 @@ import FormField from "../../components/forms/FormField.js";
 import RightAlignedRow from "../../components/cards/RightAlignedRow.js";
 import ShifterButton from "../../components/ShifterButton.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const Profile = ({ onNavigate, onLogout }) => {
     return(
         <View style={profileStyles.screenView}>
@@ -82,6 +89,9 @@ const Profile = ({ onNavigate, onLogout }) => {
 
 export default Profile;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const profileStyles = StyleSheet.create({
 	screenView: {
 		flex: 1,

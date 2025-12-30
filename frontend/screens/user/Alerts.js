@@ -1,7 +1,11 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import { View, ScrollView, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import Dashboard from "../../components/navigation/Dashboard.js";
 import H1 from "../../components/headings/H1.js";
 import H2 from "../../components/headings/H2.js";
@@ -11,6 +15,9 @@ import RightAlignedRow from "../../components/cards/RightAlignedRow.js";
 import ShifterButton from "../../components/ShifterButton.js";
 import TextRow from "../../components/cards/TextRow.js";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const Alerts = ({ onNavigate }) => {
     return(
         <View style={alertStyles.screenView}>
@@ -88,6 +95,9 @@ const Alerts = ({ onNavigate }) => {
 
 export default Alerts;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const alertStyles = StyleSheet.create({
 	screenView: {
 		flex: 1,

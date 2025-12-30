@@ -1,7 +1,11 @@
-"use strict";
-
+// =================================================================================================
+// External Dependencies
+// =================================================================================================
 import { View, ScrollView, StyleSheet } from "react-native";
 
+// =================================================================================================
+// Internal Dependencies
+// =================================================================================================
 import DraftDashboard from "../../../../components/navigation/DraftDashboard";
 import ShifterButton from "../../../../components/ShifterButton";
 import H1 from "../../../../components/headings/H1";
@@ -12,6 +16,9 @@ import TitleRow from "../../../../components/cards/TitleRow";
 import TextRow from "../../../../components/cards/TextRow";
 import RightAlignedRow from "../../../../components/cards/RightAlignedRow";
 
+// =================================================================================================
+// Component
+// =================================================================================================
 const DraftParticipation = () => {
     return(
         <View style={draftParticipationStyles.screenView}>
@@ -104,6 +111,9 @@ const DraftParticipation = () => {
 
 export default DraftParticipation;
 
+// =================================================================================================
+// Styles
+// =================================================================================================
 const draftParticipationStyles = StyleSheet.create({
     screenView: {
         flex: 1,
