@@ -1,5 +1,36 @@
 # Lessons Learned
 
+## Holiday Cleanup
+
+No sprints for the holidays, but I'm cleaning up the codebase. I've removed some superfluous comments explaining decisions made and lessons learned and wanted give them some exposure here.
+
+### Database Decisions
+
+First, a couple of choices made about functions interacting with the database that I'd like to remain consistent on:
+
+- Certain database entities, such as groups, generate their own primary keys upon creation. The creation functions for these entities, in order to refer back to what was just created, must return the primary key to the calling code (and do). Not every entity works this way, but this pattern repeats throughout the project.
+- For functions that query the database for a specific tuple using its primary key, we return a false result when no such entry exists. For functions that query the database for any number of tuples matching certain criteria, we return a true result when no such entries exist and allow the user to inspect the number of rows returned for further information. This is because we may not consider an empty list to be an error in the latter case. For example, we may wish to use the same code to process or display an empty list that we use to process or display a non-empty list. Emptiness in the first case is terminal, while emptiness in the second case is acceptable.
+
+### React Naming Standards
+
+I spent some time getting used to the React naming standards for functions passed down through props. My instinct was to call the prop that carries, for example, *setScreen* down to a child component something like *navFunction* so that the end result would be:
+
+```JavaScript
+<Child onPress={ () => { navFunction("screen") } } />
+```
+
+I read this as, "When pressed, perform the navigation function for 'screen'."
+
+But *onNavigate* appears to be the standard instead, resulting in the grammatically awkward:
+
+```JavaScript
+<Child onPress={ () => { onNavigate("screen") } } />
+```
+
+I have a tendency to read this as, "When pressed, perform the when navigated for 'screen'," which makes no sense.
+
+The correct reading is something more like, "When pressed, perform the function for when you want to navigate for 'screen'." The critical point is that *onNavigate* belongs to the parent, not the child.
+
 ## Sprint 4 Retrospective: Session Authentication and Logout
 
 ### What went right?

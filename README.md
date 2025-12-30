@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-An app for mobile and tablet devices that enables groups of professionals to compete for work shifts in the style of a fantasy sports draft.
+A group scheduling app for mobile devices that enables professionals to claim their preferred work shifts using a snake draft (or serpentine draft), a system common in fantasy sports.
 
 ## Documentation
 
