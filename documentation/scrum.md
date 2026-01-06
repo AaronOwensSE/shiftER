@@ -37,15 +37,14 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 
 | To Do | Doing | Done |
 |----|----|----|
-| Basic User Functionality |  | Work as of Start of Scrum |
-| Basic Group Functionality |  | Database Setup |
-| Basic Draft and Schedule Functionality |  | Database Model API Completion |
-| Deployment Setup |  | Basic Frontend |
-| CI/CD Setup |  | Sign-Up |
-| Fine-Grained User Management |  | Login Authentication |
-| Fine-Grained Group Management |  | Session Authentication |
-| Fine-Grained Draft Management |  | Logout |
-| Fine-Grained Schedule Management |  |  |
+| Basic Group Functionality | Basic User Functionality | Work as of Start of Scrum |
+| Basic Draft and Schedule Functionality |  | Database Setup |
+| Deployment Setup |  | Database Model API Completion |
+| CI/CD Setup |  | Basic Frontend |
+| Fine-Grained User Management |  | Sign-Up |
+| Fine-Grained Group Management |  | Login Authentication |
+| Fine-Grained Draft Management |  | Session Authentication |
+| Fine-Grained Schedule Management |  | Logout |
 | Password Recovery |  |  |
 | Rate Limiting |  |  |
 | Excel Integration |  |  |
@@ -58,6 +57,10 @@ Sprints for this project will be 2 weeks in duration. A new Git branch will be u
 A Fibonacci-based points system will be used during sprint planning to estimate backlog feature difficulty. Points should not correlate directly to man-hours. Their purpose is not to make time or cost estimates (which Sutherland emphasizes we're terrible at) but to estimate the *relative difficulty* of tasks (which we do well). I do find value in establishing a baseline so that a task designated a 3 this week won't be arbitrarily designated a 13 next month. I think 3 works well as a baseline estimate of a normal task with added complexity or unknown factors being common grounds for increase.
 
 I anticipate spending some time in each sprint as my own scrum master, clearing obstacles for myself. I expect most obstacles to take the form of external resource acquisition, like setting up a laptop so I can work remotely, or development of new skills, like taking a crash course in Express or Jest.
+
+### Sprint 5: Basic User Functionality
+
+See new branch.
 
 ### Sprint 4: Session Authentication and Logout Revisited
 
