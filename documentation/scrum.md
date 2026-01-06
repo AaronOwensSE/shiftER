@@ -60,7 +60,30 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 ### Sprint 5: Basic User Functionality
 
-See new branch.
+#### Velocity:
+
+#### Backlog
+
+| Feature | Points | Rationale |
+|----|----|----|
+| Break Fetch Logic Out to Separate API | 3 |  |
+| Break SecureStore Logic Out to Separate API | 2 | (-) Brief |
+| Reorganize Frontend Directories | 1 | (-) Brief, (-) Familiar |
+| Display User Profile | 8 | (+) End-to-End, (+) Unknown |
+| Display User Profile Testing | 8 | (+) End-to-End, (+) Unknown |
+| Update User Profile | 8 | (+) End-to-End, (+) Unknown |
+| Update User Profile Testing | 8 | (+) End-to-End, (+) Unknown |
+| Ensure Clean Session Rotation / Logout Handling on Frontend | 5 | (+) Unknown |
+
+| To Do | Doing | Done | Failed |
+|----|----|----|----|
+| Break SecureStore Logic Out to Separate API | Break Fetch Logic Out to Separate API |  |  |
+| Reorganize Frontend Directories |  |  |  |
+| Display User Profile |  |  |  |
+| Display User Profile Testing |  |  |  |
+| Update User Profile |  |  |  |
+| Update User Profile Testing |  |  |  |
+| Ensure Clean Session Rotation / Logout Handling on Frontend |  |  |  |
 
 ### Sprint 4: Session Authentication and Logout Revisited
 
