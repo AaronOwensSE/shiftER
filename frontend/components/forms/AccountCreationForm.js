@@ -11,8 +11,9 @@ import FormField from "./FormField.js";
 import ValidationMessage from "./ValidationMessage.js";
 import ShifterButton from "../ShifterButton.js";
 
-import validation from "../../validation.js";
+import apiClient from "../../api-client.js";
 import constants from "../../constants.js";
+import validation from "../../validation.js";
 
 // =================================================================================================
 // Component
@@ -25,17 +26,6 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
     const [ password1, setPassword1 ] = React.useState("");
     const [ password2, setPassword2 ] = React.useState("");
     const [ createAccountMessage, setCreateAccountMessage ] = React.useState("");
-
-    const createAccountButtonDisabled = !formStateIsValid(
-        userId, displayName, email1, email2, password1, password2
-    );
-
-    const userIdValidationMessage = getUserIdValidationMessage();
-    const displayNameValidationMessage = getDisplayNameValidationMessage();
-    const email1ValidationMessage = getEmail1ValidationMessage();
-    const email2ValidationMessage = getEmail2ValidationMessage();
-    const password1ValidationMessage = getPassword1ValidationMessage();
-    const password2ValidationMessage = getPassword2ValidationMessage();
     
     const formStateIsValid = () => {
         return validation.isValidUserId(userId)
@@ -130,37 +120,26 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
         return password2ValidationMessage;
     };
 
-    const createUser = async () => {
-        const route = "/create-user";
-        const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
-        const url = urlParts.join("");
-
-        const response = await fetch(
-            url,
-            {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    id: userId,
-                    password: password1,
-                    name: displayName,
-                    email: email1
-                })
-            }
+    const handleCreateUser = async () => {
+        const result = await apiClient.createUser(
+            { id: userId, password: password1, name: displayName, email: email1 }
         );
 
-        if (response.ok) {
-            const result = await response.json();
-
-            if (result.ok) {
-                onNavigate("Login");
-            } else {
-                setCreateAccountMessage(result.message);
-            }
+        if (result.ok) {
+            onNavigate("Login");
         } else {
-            setCreateAccountMessage("Connection error.");
+            setCreateAccountMessage(result.message);
         }
     };
+
+    const createAccountButtonDisabled = !formStateIsValid();
+    
+    const userIdValidationMessage = getUserIdValidationMessage();
+    const displayNameValidationMessage = getDisplayNameValidationMessage();
+    const email1ValidationMessage = getEmail1ValidationMessage();
+    const email2ValidationMessage = getEmail2ValidationMessage();
+    const password1ValidationMessage = getPassword1ValidationMessage();
+    const password2ValidationMessage = getPassword2ValidationMessage();
 
     return(
         <ScrollView
@@ -241,7 +220,7 @@ const AccountCreationForm = ({ style, contentContainerStyle, onNavigate }) => {
                 style={accountCreationFormStyles.shifterButton}
                 text="Create Account"
                 disabled={createAccountButtonDisabled}
-                onPress={ () => { createUser(); } }
+                onPress={handleCreateUser}
             />
 
             <ValidationMessage

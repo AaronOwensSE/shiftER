@@ -25,6 +25,9 @@ import Schedule from "./screens/user/group/Schedule.js";
 import Draft from "./screens/user/group/draft/Draft.js";
 import DraftParticipation from "./screens/user/group/draft/DraftParticipation.js";
 
+import apiClient from "./api-client.js";
+import errorHandling from "./error-handling.js";
+
 // =================================================================================================
 // Component
 // =================================================================================================
@@ -94,10 +97,33 @@ export default function App() {
 
     const [ screen, setScreen ] = React.useState(defaultScreen);
 
-    const handleLogin = (sessionId) => {
-        setSessionId(sessionId);
-        setSessionIdAuthenticated(true);
-        setScreen("Groups");
+    const logIn = async ({ id, password }) => {
+        let result;
+        const apiLoginResult = await apiClient.logIn({ id, password });
+
+        if (apiLoginResult.ok) {
+            result = new errorHandling.Result();
+            const sessionId = apiLoginResult.value;
+
+            try {
+                await SecureStore.setItemAsync("sessionId", sessionId);
+            } catch (error) {
+                result.ok = false;
+                result.message = "Unable to store session ID.";
+
+                return result;
+            }
+
+            result.ok = true;
+
+            setSessionId(sessionId);
+            setSessionIdAuthenticated(true);
+            setScreen("Groups");
+        } else {
+            result = apiLoginResult;
+        }
+
+        return result;
     };
 
     const handleLogout = async () => {
@@ -150,13 +176,13 @@ export default function App() {
     } else {
         switch (screen) {
             case "Login":
-                return <Login onNavigate={setScreen} onLogin={handleLogin} />;
+                return <Login onNavigate={setScreen} onLogin={logIn} />;
             case "AccountCreation":
                 return <AccountCreation onNavigate={setScreen} />;
             case "PasswordReset":
                 return <PasswordReset onNavigate={setScreen} />;
             default:
-                return <Login onNavigate={setScreen} onLogin={handleLogin} />;
+                return <Login onNavigate={setScreen} onLogin={logIn} />;
         }
     }
 };

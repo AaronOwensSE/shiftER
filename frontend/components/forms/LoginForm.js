@@ -12,6 +12,8 @@ import FormField from "./FormField.js";
 import ValidationMessage from "./ValidationMessage.js";
 import ShifterButton from "../ShifterButton.js";
 
+import apiClient from "../../api-client.js";
+
 // =================================================================================================
 // Component
 // =================================================================================================
@@ -20,39 +22,11 @@ const LoginForm = ({ style, onNavigate, onLogin }) => {
     const [ password, setPassword ] = React.useState("");
     const [ loginMessage, setLoginMessage ] = React.useState("");
 
-    const logIn = async () => {
-        const route = "/log-in";
-        const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
-        const url = urlParts.join("");
+    const handleLoginSubmission = async () => {
+        const result = await onLogin({ id: userId, password: password });
 
-        const response = await fetch(
-            url,
-            {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    id: userId,
-                    password: password
-                })
-            }
-        );
-
-        if (response.ok) {
-            const result = await response.json();
-
-            if (result.ok) {
-                const sessionId = result.value;
-
-                try {
-                    await SecureStore.setItemAsync("sessionId", sessionId);
-                } catch (error) {}
-
-                onLogin(sessionId);
-            } else {
-                setLoginMessage(result.message);
-            }
-        } else {
-            setLoginMessage("Connection error.");
+        if (!result.ok) {
+            setLoginMessage(result.message);
         }
     };
 
@@ -68,7 +42,7 @@ const LoginForm = ({ style, onNavigate, onLogin }) => {
             />
 
             <ShifterButton
-                style={loginFormStyles.loginButton} text="Log In" onPress={ () => { logIn(); } }
+                style={loginFormStyles.loginButton} text="Log In" onPress={handleLoginSubmission}
             />
 
             <ValidationMessage style={loginFormStyles.loginMessage} text={loginMessage} />
