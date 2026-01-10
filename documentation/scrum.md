@@ -77,10 +77,8 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | To Do | Doing | Done | Failed |
 |----|----|----|----|
-| Break SecureStore Logic Out to Separate API | Break Fetch Logic Out to Separate API |  |  |
-| Reorganize Frontend Directories |  |  |  |
-| Display User Profile |  |  |  |
-| Display User Profile Testing |  |  |  |
+| Display User Profile | Break SecureStore Logic Out to Separate API | Break Fetch Logic Out to Separate API |  |
+| Display User Profile Testing | Reorganize Frontend Directories |  |  |
 | Update User Profile |  |  |  |
 | Update User Profile Testing |  |  |  |
 | Ensure Clean Session Rotation / Logout Handling on Frontend |  |  |  |
