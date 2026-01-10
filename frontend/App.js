@@ -31,56 +31,34 @@ import errorHandling from "./error-handling.js";
 // =================================================================================================
 // Component
 // =================================================================================================
-
-// May need to pull LoginForm's logIn function logic up to App.js's handleLogin.
-// May also need to start reorganizing and breaking these functions out.
-// For now, login/logout is functional.
-
 export default function App() {
     const [ sessionId, setSessionId ] = React.useState();
     const [ sessionIdAuthenticated, setSessionIdAuthenticated ] = React.useState(false);
 
-    React.useEffect(() => {
-        const getStoredSessionId = async () => {
-            try {
-                const storedSessionId = await SecureStore.getItemAsync("sessionId");
-                setSessionId(storedSessionId);
-            } catch (error) {}
-        };
+    const getStoredSessionId = async () => {
+        try {
+            const storedSessionId = await SecureStore.getItemAsync("sessionId");
+            setSessionId(storedSessionId);
+        } catch (error) {}
+    };
 
-        const authenticateSessionId = async () => {
-            const route = "/authenticate-session";
-            const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
-            const url = urlParts.join("");
+    const authenticateSessionId = async () => {
+        const result = await apiClient.authenticateSessionId(sessionId);
 
-            const response = await fetch(
-                url,
-                {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        id: sessionId
-                    })
-                }
-            );
-
-            if (response.ok) {
-                const result = await response.json();
-
-                if (result.ok) {
-                    setSessionIdAuthenticated(true);
-                    setScreen("Groups");
-                } else {
-                    await SecureStore.deleteItemAsync("sessionId");
-                }
-            }
-        };
-
-        const restoreSession = async () => {
-            await getStoredSessionId();
-            await authenticateSessionId();
+        if (result.ok) {
+            setSessionIdAuthenticated(true);
+            setScreen("Groups");
+        } else {
+            await SecureStore.deleteItemAsync("sessionId");
         }
+    };
 
+    const restoreSession = async () => {
+        await getStoredSessionId();
+        await authenticateSessionId();
+    };
+
+    React.useEffect(() => {
         restoreSession();
     }, []);
 
@@ -126,36 +104,19 @@ export default function App() {
         return result;
     };
 
-    const handleLogout = async () => {
-        const route = "/log-out";
-        const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
-        const url = urlParts.join("");
+    const logOut = async () => {
+        const result = await apiClient.logOut(sessionId);
 
-        const response = await fetch(
-            url,
-            {
-                method: "DELETE",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    id: sessionId
-                })
-            }
-        );
-
-        if (response.ok) {
-            const result = await response.json();
-
-            if (result.ok) {
-                await SecureStore.deleteItemAsync("sessionId");
-                setSessionId(null);
-                setSessionIdAuthenticated(false);
-                setScreen("Login");
-            }
-
-            // Should anything more be done if the logout request fails?
-            // Removing the session ID locally doesn't remove the session from the database.
-            // Error message on profile screen?
+        if (result.ok) {
+            await SecureStore.deleteItemAsync("sessionId");
+            setSessionId(null);
+            setSessionIdAuthenticated(false);
+            setScreen("Login");
         }
+
+        // Should a failed logout request do anything?
+        // Delete local session ID and navigate to login page even though database ID remains?
+        // Display error message?
     };
 
     if (sessionIdAuthenticated) {
@@ -167,7 +128,7 @@ export default function App() {
             case "Schedules":
                 return <Schedules onNavigate={setScreen} />;
             case "Profile":
-                return <Profile onNavigate={setScreen} onLogout={handleLogout} />;
+                return <Profile onNavigate={setScreen} onLogout={logOut} />;
             case "Alerts":
                 return <Alerts onNavigate={setScreen} />;
             default:
