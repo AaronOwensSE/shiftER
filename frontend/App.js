@@ -17,13 +17,14 @@ import Schedules from "./screens/user/Schedules.js";
 import Alerts from "./screens/user/Alerts.js";
 import Profile from "./screens/user/Profile.js";
 
-import Group from "./screens/user/group/Group.js";
-import GroupSchedules from "./screens/user/group/GroupSchedules.js";
-import GroupMembership from "./screens/user/group/GroupMembership.js";
-import Schedule from "./screens/user/group/Schedule.js";
+import Group from "./screens/group/Group.js";
+import GroupSchedules from "./screens/group/GroupSchedules.js";
+import GroupMembership from "./screens/group/GroupMembership.js";
 
-import Draft from "./screens/user/group/draft/Draft.js";
-import DraftParticipation from "./screens/user/group/draft/DraftParticipation.js";
+import Schedule from "./screens/Schedule.js";
+
+import Draft from "./screens/draft/Draft.js";
+import DraftParticipation from "./screens/draft/DraftParticipation.js";
 
 import apiClient from "./api-client.js";
 import errorHandling from "./error-handling.js";
