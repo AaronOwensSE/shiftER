@@ -37,14 +37,15 @@ During frontend development (sprint 2), I found it useful to build out a set of 
 
 | To Do | Doing | Done |
 |----|----|----|
-| Basic Group Functionality | Basic User Functionality | Work as of Start of Scrum |
-| Basic Draft and Schedule Functionality |  | Database Setup |
-| Deployment Setup |  | Database Model API Completion |
-| CI/CD Setup |  | Basic Frontend |
-| Fine-Grained User Management |  | Sign-Up |
-| Fine-Grained Group Management |  | Login Authentication |
-| Fine-Grained Draft Management |  | Session Authentication |
-| Fine-Grained Schedule Management |  | Logout |
+| Basic User Functionality |  | Work as of Start of Scrum |
+| Basic Group Functionality |  | Database Setup |
+| Basic Draft and Schedule Functionality |  | Database Model API Completion |
+| Deployment Setup |  | Basic Frontend |
+| CI/CD Setup |  | Sign-Up |
+| Fine-Grained User Management |  | Login Authentication |
+| Fine-Grained Group Management |  | Session Authentication |
+| Fine-Grained Draft Management |  | Logout |
+| Fine-Grained Schedule Management |  |  |
 | Password Recovery |  |  |
 | Rate Limiting |  |  |
 | Excel Integration |  |  |
@@ -60,7 +61,9 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 ### Sprint 5: Basic User Functionality
 
-#### Velocity:
+Sprint cancelled to address major project reorganization.
+
+#### Velocity: 4
 
 #### Backlog
 
@@ -77,11 +80,12 @@ I anticipate spending some time in each sprint as my own scrum master, clearing 
 
 | To Do | Doing | Done | Failed |
 |----|----|----|----|
-| Break SecureStore Logic Out to Separate API | Display User Profile | Break Fetch Logic Out to Separate API |  |
-| Display User Profile Testing |  | Reorganize Frontend Directories |  |
-| Update User Profile |  |  |  |
-| Update User Profile Testing |  |  |  |
-| Ensure Clean Session Rotation / Logout Handling on Frontend |  |  |  |
+|  |  | Break Fetch Logic Out to Separate API | Display User Profile |
+|  |  | Reorganize Frontend Directories | Break SecureStore Logic Out to Separate API |
+|  |  |  | Display User Profile Testing |
+|  |  |  | Update User Profile |
+|  |  |  | Update User Profile Testing |
+|  |  |  | Ensure Clean Session Rotation / Logout Handling on Frontend |
 
 ### Sprint 4: Session Authentication and Logout Revisited
 

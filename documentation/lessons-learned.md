@@ -1,5 +1,15 @@
 # Lessons Learned
 
+## Sprint 5 Cancellation
+
+As the project has grown in size, I have found an increasing need for clarification of project architecture and separation of concerns. I have cancelled sprint 5 to split the project into separate repos, one for the backend API and one for the mobile frontend.
+
+I will use the current repo as a landing page to host project-wide documentation and links to each new repo. I'll also be cleaning up the existing documentation to reflect any changes resulting from the split and purge any out-of-date information.
+
+I plan to zero in on the backend API as a standalone project and finish it before touching the frontend again. I want to get the backend deployed on a real service immediately, reorganize its internal architecture and error handling, remove dead code, rethink testing, and carry the new architecture all the way to the finish line. The backend is the part of the project I understand best, and getting it finished without having to engage in piecemeal frontend challenges will be a joy and a relief, granting me an unshakeable foundation for the rest of the project (as well as something complete to show for my many months of work).
+
+Again, I feel the conflict between the need to focus on one system at a time and the need to deliver end-to-end features spanning multiple systems, but I think acknowledging backend and frontend as entirely separate projects with separate configurations, deployments, technologies, and paradigms is the right call to continue managing complexity.
+
 ## Holiday Cleanup
 
 No sprints for the holidays, but I'm cleaning up the codebase. I've removed some superfluous comments explaining decisions made and lessons learned and wanted give them some exposure here.
