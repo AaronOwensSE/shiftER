@@ -17,67 +17,49 @@ import Schedules from "./screens/user/Schedules.js";
 import Alerts from "./screens/user/Alerts.js";
 import Profile from "./screens/user/Profile.js";
 
-import Group from "./screens/user/group/Group.js";
-import GroupSchedules from "./screens/user/group/GroupSchedules.js";
-import GroupMembership from "./screens/user/group/GroupMembership.js";
-import Schedule from "./screens/user/group/Schedule.js";
+import Group from "./screens/group/Group.js";
+import GroupSchedules from "./screens/group/GroupSchedules.js";
+import GroupMembership from "./screens/group/GroupMembership.js";
 
-import Draft from "./screens/user/group/draft/Draft.js";
-import DraftParticipation from "./screens/user/group/draft/DraftParticipation.js";
+import Schedule from "./screens/Schedule.js";
+
+import Draft from "./screens/draft/Draft.js";
+import DraftParticipation from "./screens/draft/DraftParticipation.js";
+
+import apiClient from "./api-client.js";
+import errorHandling from "./error-handling.js";
 
 // =================================================================================================
 // Component
 // =================================================================================================
-
-// May need to pull LoginForm's logIn function logic up to App.js's handleLogin.
-// May also need to start reorganizing and breaking these functions out.
-// For now, login/logout is functional.
-
 export default function App() {
     const [ sessionId, setSessionId ] = React.useState();
     const [ sessionIdAuthenticated, setSessionIdAuthenticated ] = React.useState(false);
 
-    React.useEffect(() => {
-        const getStoredSessionId = async () => {
-            try {
-                const storedSessionId = await SecureStore.getItemAsync("sessionId");
-                setSessionId(storedSessionId);
-            } catch (error) {}
-        };
+    const getStoredSessionId = async () => {
+        try {
+            const storedSessionId = await SecureStore.getItemAsync("sessionId");
+            setSessionId(storedSessionId);
+        } catch (error) {}
+    };
 
-        const authenticateSessionId = async () => {
-            const route = "/authenticate-session";
-            const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
-            const url = urlParts.join("");
+    const authenticateSessionId = async () => {
+        const result = await apiClient.authenticateSessionId(sessionId);
 
-            const response = await fetch(
-                url,
-                {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        id: sessionId
-                    })
-                }
-            );
-
-            if (response.ok) {
-                const result = await response.json();
-
-                if (result.ok) {
-                    setSessionIdAuthenticated(true);
-                    setScreen("Groups");
-                } else {
-                    await SecureStore.deleteItemAsync("sessionId");
-                }
-            }
-        };
-
-        const restoreSession = async () => {
-            await getStoredSessionId();
-            await authenticateSessionId();
+        if (result.ok) {
+            setSessionIdAuthenticated(true);
+            setScreen("Groups");
+        } else {
+            await SecureStore.deleteItemAsync("sessionId");
         }
+    };
 
+    const restoreSession = async () => {
+        await getStoredSessionId();
+        await authenticateSessionId();
+    };
+
+    React.useEffect(() => {
         restoreSession();
     }, []);
 
@@ -94,42 +76,48 @@ export default function App() {
 
     const [ screen, setScreen ] = React.useState(defaultScreen);
 
-    const handleLogin = (sessionId) => {
-        setSessionId(sessionId);
-        setSessionIdAuthenticated(true);
-        setScreen("Groups");
+    const logIn = async ({ id, password }) => {
+        let result;
+        const apiLoginResult = await apiClient.logIn({ id, password });
+
+        if (apiLoginResult.ok) {
+            result = new errorHandling.Result();
+            const sessionId = apiLoginResult.value;
+
+            try {
+                await SecureStore.setItemAsync("sessionId", sessionId);
+            } catch (error) {
+                result.ok = false;
+                result.message = "Unable to store session ID.";
+
+                return result;
+            }
+
+            result.ok = true;
+
+            setSessionId(sessionId);
+            setSessionIdAuthenticated(true);
+            setScreen("Groups");
+        } else {
+            result = apiLoginResult;
+        }
+
+        return result;
     };
 
-    const handleLogout = async () => {
-        const route = "/log-out";
-        const urlParts = [ process.env.EXPO_PUBLIC_API_URL, route ];
-        const url = urlParts.join("");
+    const logOut = async () => {
+        const result = await apiClient.logOut(sessionId);
 
-        const response = await fetch(
-            url,
-            {
-                method: "DELETE",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    id: sessionId
-                })
-            }
-        );
-
-        if (response.ok) {
-            const result = await response.json();
-
-            if (result.ok) {
-                await SecureStore.deleteItemAsync("sessionId");
-                setSessionId(null);
-                setSessionIdAuthenticated(false);
-                setScreen("Login");
-            }
-
-            // Should anything more be done if the logout request fails?
-            // Removing the session ID locally doesn't remove the session from the database.
-            // Error message on profile screen?
+        if (result.ok) {
+            await SecureStore.deleteItemAsync("sessionId");
+            setSessionId(null);
+            setSessionIdAuthenticated(false);
+            setScreen("Login");
         }
+
+        // Should a failed logout request do anything?
+        // Delete local session ID and navigate to login page even though database ID remains?
+        // Display error message?
     };
 
     if (sessionIdAuthenticated) {
@@ -141,7 +129,7 @@ export default function App() {
             case "Schedules":
                 return <Schedules onNavigate={setScreen} />;
             case "Profile":
-                return <Profile onNavigate={setScreen} onLogout={handleLogout} />;
+                return <Profile onNavigate={setScreen} onLogout={logOut} />;
             case "Alerts":
                 return <Alerts onNavigate={setScreen} />;
             default:
@@ -150,13 +138,13 @@ export default function App() {
     } else {
         switch (screen) {
             case "Login":
-                return <Login onNavigate={setScreen} onLogin={handleLogin} />;
+                return <Login onNavigate={setScreen} onLogin={logIn} />;
             case "AccountCreation":
                 return <AccountCreation onNavigate={setScreen} />;
             case "PasswordReset":
                 return <PasswordReset onNavigate={setScreen} />;
             default:
-                return <Login onNavigate={setScreen} onLogin={handleLogin} />;
+                return <Login onNavigate={setScreen} onLogin={logIn} />;
         }
     }
 };
