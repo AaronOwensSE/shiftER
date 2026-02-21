@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A group scheduling app for mobile devices that enables professionals to claim their preferred work shifts using a snake draft (or serpentine draft), a system common in fantasy sports.
+A group scheduling app for mobile devices that enables professionals to claim their preferred work shifts using a snake draft (or serpentine draft).
 
 ## Documentation
 
@@ -15,7 +15,3 @@ A group scheduling app for mobile devices that enables professionals to claim th
 - [Frontend Design](./documentation/frontend-design.md)
 - [Project Structure and Dependencies](./documentation/project-structure-and-dependencies.md)
 - [Lessons Learned](./documentation/lessons-learned.md)
-
-## License
-
-All rights reserved. This repo is made public only to facilitate communication between stakeholders.
