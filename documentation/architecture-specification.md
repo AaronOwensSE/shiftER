@@ -8,9 +8,9 @@ This project will utilize a classic *layered architectural model* with frontend,
 
 Communication between layers will take place over HTTPS.
 
-## Diagram
+## System Diagram
 
-![High-level architectural diagram](high-level-architecture.jpeg)
+![High-level architectural diagram](system-diagram.jpeg)
 
 ## Additional Architecture
 
