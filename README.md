@@ -4,6 +4,12 @@
 
 A group scheduling app for mobile devices that enables professionals to claim their preferred work shifts using a snake draft (or serpentine draft).
 
+## Documentation
+
+- [Project Management Plan](./documentation/project-management-plan.md)
+- [Requirements Specification](./documentation/requirements-specification.md)
+- [Architecture Specification](./documentation/architecture-specification.md)
+
 ## Active Repos
 
 This project has very recently undergone a major reset due to a desire for new architecture and stronger separation of concerns. These repos are building up from a fresh start, informed by old code but dedicated to a new approach. To explore prior work on the project, please visit the archived repo in the next section.
