@@ -30,6 +30,10 @@ The users are working professionals primarily concerned with correct function, d
 
 The developer's (my) time and skillset are the primary drivers of this project. I am using this as an opportunity to learn and improve. Since I work a full-time job unrelated to software development, I will be completing this project during my free time. I hope Scrum will be an effective instrument for keeping me on task, but some weeks may have to yield to other life concerns. There are no significant business or financial risks involved in this project.
 
+## Testing and Deployment
+
+Testing and deployment will be performed continuously during Scrum sprints, not as separate phases of development.
+
 ---
 
 [Back to README](../README.md)
