@@ -10,7 +10,7 @@ Communication between layers will take place over HTTPS.
 
 ## Diagram
 
-![High-level architectural diagram](high-level-architecture.md)
+![High-level architectural diagram](high-level-architecture.jpeg)
 
 ## Additional Architecture
 
