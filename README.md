@@ -14,7 +14,7 @@ A group scheduling app for mobile devices that enables professionals to claim th
 
 This project has very recently undergone a major reset due to a desire for new architecture and stronger separation of concerns. These repos are building up from a fresh start, informed by old code but dedicated to a new approach. To explore prior work on the project, please visit the archived repo in the next section.
 
-- [shiftER-backend](https://github.com/AaronOwensSE/shiftER-backend) - Backend API
+- [shiftER-backend](https://github.com/AaronOwensSE/shiftER-backend) - RESTful API backend
 - [shiftER-frontend-mobile](https://github.com/AaronOwensSE/shiftER-frontend-mobile) - Mobile frontend
 
 ## Archived Repo: [shiftER-v1-archive](https://github.com/AaronOwensSE/shiftER-v1-archive)
