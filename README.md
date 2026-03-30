@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-A group scheduling app for mobile devices that enables professionals to claim their preferred work shifts using a snake draft (or serpentine draft).
+A group scheduling app for mobile devices that enables professionals to coordinate work schedules using a snake draft (or serpentine draft).
 
 ## Documentation
 
